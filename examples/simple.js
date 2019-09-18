@@ -24,7 +24,7 @@ export default function App() {
             items: [],
           },
         ]}
-        bottom="Made with ❤ by AFX"
+        bottom="Made with ❤️ by AFX"
       />
     </div>
   );

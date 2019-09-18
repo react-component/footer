@@ -16,12 +16,12 @@ export interface FooterColumn {
 }
 
 const Column: React.FC<FooterColumn> = ({ prefixCls, title, items = [] }) => (
-  <div className={`${prefixCls}-footer-column`}>
+  <div className={`${prefixCls}-column`}>
     {title && <h2>{title}</h2>}
-    {items.map(item => (
-      <div className={`${prefixCls}-footer-item`}>
+    {items.map((item, i) => (
+      <div className={`${prefixCls}-item`} key={i}>
         {item.icon && (
-          <span className={`${prefixCls}-footer-item-icon`}>{item.icon}</span>
+          <span className={`${prefixCls}-item-icon`}>{item.icon}</span>
         )}
         <a href={item.url} target={item.openExternal ? '_blank' : undefined}>
           {item.title}
@@ -29,7 +29,7 @@ const Column: React.FC<FooterColumn> = ({ prefixCls, title, items = [] }) => (
         {item.description && (
           <>
             <span>-</span>
-            <span className={`${prefixCls}-footer-item-description`}>
+            <span className={`${prefixCls}-item-description`}>
               {item.description}
             </span>
           </>

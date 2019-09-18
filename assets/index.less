@@ -8,19 +8,51 @@
   line-height: 1.5;
   background-color: #000;
 
-  &-main {
+  a {
+    transition: all .3s;
+    color: rgba(255, 255, 255, .9);
+
+    &:hover {
+      color: #40a9ff;
+    }
+  }
+
+  &-container {
     width: 100%;
     max-width: 1200px;
     padding: 80px 24px;
     margin: auto;
-    display: flex;
   }
 
   &-columns {
+    display: flex;
+    justify-content: space-around;
+  }
 
+  &-column {
+    h2 {
+      position: relative;
+      margin: 0 auto 24px;
+      font-weight: 500;
+      font-size: 16px;
+      color: #fff;
+    }
+  }
+
+  &-item {
+    margin: 12px 0;
   }
 
   &-bottom {
-
+    &-container {
+      border-top: 1px solid rgba(255, 255, 255, .25);
+      width: 100%;
+      max-width: 1200px;
+      text-align: center;
+      margin: 0 auto;
+      padding: 16px 0;
+      line-height: 32px;
+      font-size: 16px;
+    }
   }
 }
