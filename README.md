@@ -8,7 +8,6 @@ Footer component used in [ant.design](https://ant.design).
 [![build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
 [![david deps][david-image]][david-url]
-[![node version][node-image]][node-url]
 [![npm download][download-image]][download-url]
 
 [npm-image]: http://img.shields.io/npm/v/rc-footer.svg?style=flat-square
@@ -19,8 +18,6 @@ Footer component used in [ant.design](https://ant.design).
 [coveralls-url]: https://coveralls.io/r/react-component/footer?branch=master
 [david-image]: https://david-dm.org/react-component/footer/status.svg?style=flat-square
 [david-url]: https://david-dm.org/react-component/footer
-[node-image]: https://img.shields.io/badge/node.js-%3E=_0.10-green.svg?style=flat-square
-[node-url]: http://nodejs.org/download/
 [download-image]: https://img.shields.io/npm/dm/rc-footer.svg?style=flat-square
 [download-url]: https://npmjs.org/package/rc-footer
 
