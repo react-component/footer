@@ -1,8 +1,6 @@
-# rc-footer
+# rc-footer 🐾
 
----
-
-Footer component used in [ant.design](https://ant.design).
+🐾 Pretty Footer component used in [ant.design](https://ant.design).
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
@@ -40,23 +38,51 @@ http://react-component.github.io/footer/examples/
 import Footer from 'rc-footer';
 import { render } from 'react-dom';
 
-render(<Footer />, mountNode);
+render(
+  <Footer
+    columns={[
+      {
+        icon: <img src="https://gw.alipayobjects.com/zos/rmsportal/XuVpGqBFxXplzvLjJBZB.svg" />,
+        title: '语雀',
+        url: 'https://yuque.com',
+        description: '知识创作与分享工具',
+        openExternal: true,
+      },
+    ]}
+    bottom="Made with ❤️ by AFX"
+  />,
+  mountNode
+);
 ```
 
 ## API
 
 | Property       | Type                     | Default   | Description                                              |
 | -------------- | ------------------------ | --------- | -------------------------------------------------------- |
-| prefixCls      | String                   | rc-footer |                                                          |
-| className      | String                   | ''        | additional class name of root node                       |
-| checked        | boolean                  | false     | whether footer is checked                                |
-| defaultChecked | boolean                  | false     | whether footer is checked on init                        |
-| onChange       | Function(checked, event) |           | called when footer is checked or unchecked               |
-| tabIndex       | number                   |           | tab-index of footer node                                 |
-| onClick        | Function(checked, event) |           | called when footer is clicked                            |
-| autoFocus      | boolean                  |           | get focus when mounts                                    |
-| disabled       | boolean                  | false     | whether footer is disabled                               |
-| loadingIcon    | React.ReactNode          |           | specific the extra node. generally used in loading icon. |
+| prefixCls      | string                   | rc-footer |                                                          |
+| className      | string                   | ''        | additional class name of footer                          |
+| style          | React.CSSProperties      |           | style properties of footer                               |
+| columns        | [Column](#Column) Array  | []        | columns data inside footer                               |
+| bottom         | ReactNode                |           | extra bottom area beneath footer columns                 |
+
+### Column
+
+| Property       | Type                       | Default   | Description                                            |
+| -------------- | -------------------------- | --------- | ------------------------------------------------------ |
+| icon           | ReactNode                  |           | icon that before column title                          |
+| title          | ReactNode                  |           | title of column                                        |
+| items          | [Item](#Column-Item) Array | []        | items data inside each column                          |
+
+### Column Item
+
+| Property       | Type                     | Default   | Description                                              |
+| -------------- | ------------------------ | --------- | -------------------------------------------------------- |
+| icon           | ReactNode                |           | icon that before column title                            |
+| title          | ReactNode                |           | title of column                                          |
+| description    | ReactNode                |           | description of column, come after title                  |
+| url            | string                   |           | link url of item title                                   |
+| openExternal   | boolean                  | false     | link target would be `_blank` if `openExternal` is ture  |
+
 
 ## Development
 
