@@ -68,6 +68,12 @@ export default function App() {
             ],
           },
           {
+            icon: (
+              <img
+                src="https://gw.alipayobjects.com/zos/rmsportal/nBVXkrFdWHxbZlmMbsaH.svg"
+                alt="more products"
+              />
+            ),
             title: '更多产品',
             items: [
               {
@@ -80,6 +86,18 @@ export default function App() {
                 title: '语雀',
                 url: 'https://yuque.com',
                 description: '知识创作与分享工具',
+                openExternal: true,
+              },
+              {
+                icon: (
+                  <img
+                    src="https://gw.alipayobjects.com/zos/rmsportal/uHocHZfNWZOdsRUonZNr.png"
+                    alt="yuque"
+                  />
+                ),
+                title: '云凤蝶',
+                url: 'https://yunfengdie.com',
+                description: '中台建站平台',
                 openExternal: true,
               },
             ],

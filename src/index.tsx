@@ -23,11 +23,12 @@ const Footer: React.FC<FooterProps> = ({
       <section className={`${prefixCls}-container`}>
         {columns && columns.length > 0 && (
           <section className={`${prefixCls}-columns`}>
-            {columns.map(({ title, items = [] }, i) => (
+            {columns.map(({ title, icon, items = [] }, i) => (
               <Column
                 key={i}
                 prefixCls={prefixCls}
                 title={title}
+                icon={icon}
                 items={items}
               />
             ))}

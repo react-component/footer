@@ -15,9 +15,19 @@ export interface FooterColumn {
   items?: FooterColumnItem[];
 }
 
-const Column: React.FC<FooterColumn> = ({ prefixCls, title, items = [] }) => (
+const Column: React.FC<FooterColumn> = ({
+  prefixCls,
+  icon,
+  title,
+  items = [],
+}) => (
   <div className={`${prefixCls}-column`}>
-    {title && <h2>{title}</h2>}
+    {(title || icon) && (
+      <h2>
+        {icon && <span className={`${prefixCls}-column-icon`}>{icon}</span>}
+        {title}
+      </h2>
+    )}
     {items.map((item, i) => (
       <div className={`${prefixCls}-item`} key={i}>
         <a href={item.url} target={item.openExternal ? '_blank' : undefined}>
