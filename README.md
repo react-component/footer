@@ -2,17 +2,17 @@
 
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
-[![Test coverage][coveralls-image]][coveralls-url]
+[![Codecov][codecov-image]][codecov-url]
 [![david deps][david-image]][david-url]
 [![david devDeps][david-dev-image]][david-dev-url]
 [![npm download][download-image]][download-url]
 
 [npm-image]: http://img.shields.io/npm/v/rc-footer.svg?style=flat-square
 [npm-url]: http://npmjs.org/package/rc-footer
-[travis-image]: https://img.shields.io/travis/react-component/footer.svg?style=flat-square
-[travis-url]: https://travis-ci.org/react-component/footer
-[coveralls-image]: https://img.shields.io/coveralls/react-component/footer.svg?style=flat-square
-[coveralls-url]: https://coveralls.io/r/react-component/footer?branch=master
+[travis-image]: https://img.shields.io/travis/com/react-component/footer.svg?style=flat-square
+[travis-url]: https://travis-ci.com/react-component/footer
+[codecov-image]: https://img.shields.io/codecov/c/github/react-component/footer/master.svg?style=flat-square
+[codecov-url]: https://codecov.io/gh/react-component/footer/branch/master
 [david-image]: https://david-dm.org/react-component/footer/status.svg?style=flat-square
 [david-dev-url]: https://david-dm.org/react-component/footer?type=dev
 [david-dev-image]: https://david-dm.org/react-component/footer/dev-status.svg?style=flat-square
