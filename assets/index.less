@@ -1,117 +1,26 @@
-@footerPrefixCls: rc-footer;
+@footer-prefix-cls: rc-footer;
 
-@duration: 0.3s;
-
-.@{footerPrefixCls} {
+.@{footer-prefix-cls} {
   position: relative;
-  display: inline-block;
-  box-sizing: border-box;
-  width: 44px;
-  height: 22px;
-  line-height: 20px;
-  padding: 0;
-  vertical-align: middle;
-  border-radius: 20px 20px;
-  border: 1px solid #ccc;
-  background-color: #ccc;
-  cursor: pointer;
-  transition: all @duration cubic-bezier(0.35, 0, 0.25, 1);
+  clear: both;
+  color: rgba(255, 255, 255, .4);
+  font-size: 14px;
+  line-height: 1.5;
+  background-color: #000;
 
-  &-inner {
-    color: #fff;
-    font-size: 12px;
-    position: absolute;
-    left: 24px;
-    top: 0;
+  &-main {
+    width: 100%;
+    max-width: 1200px;
+    padding: 80px 24px;
+    margin: auto;
+    display: flex;
   }
 
-  &:after {
-    position: absolute;
-    width: 18px;
-    height: 18px;
-    left: 2px;
-    top: 1px;
-    border-radius: 50% 50%;
-    background-color: #fff;
-    content: ' ';
-    cursor: pointer;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.26);
-    transform: scale(1);
-    transition: left @duration cubic-bezier(0.35, 0, 0.25, 1);
-    animation-timing-function: cubic-bezier(0.35, 0, 0.25, 1);
-    animation-duration: @duration;
-    animation-name: rcfooterOff;
+  &-columns {
+
   }
 
-  &:hover:after {
-    transform: scale(1.1);
-    animation-name: rcfooterOn;
-  }
+  &-bottom {
 
-  &:focus {
-    box-shadow: 0 0 0 2px tint(#2db7f5, 80%);
-    outline: none;
-  }
-
-  &-checked {
-    border: 1px solid #87d068;
-    background-color: #87d068;
-
-    .@{footerPrefixCls}-inner {
-      left: 6px;
-    }
-
-    &:after {
-      left: 22px;
-    }
-  }
-
-  &-disabled {
-    cursor: no-drop;
-    background: #ccc;
-    border-color: #ccc;
-
-    &:after {
-      background: #9e9e9e;
-      animation-name: none;
-      cursor: no-drop;
-    }
-
-    &:hover:after {
-      transform: scale(1);
-      animation-name: none;
-    }
-  }
-
-  &-label {
-    display: inline-block;
-    line-height: 20px;
-    font-size: 14px;
-    padding-left: 10px;
-    vertical-align: middle;
-    white-space: normal;
-    pointer-events: none;
-    user-select: text;
-  }
-}
-
-@keyframes rcfooterOn {
-  0% {
-    transform: scale(1);
-  }
-  50% {
-    transform: scale(1.25);
-  }
-  100% {
-    transform: scale(1.1);
-  }
-}
-
-@keyframes rcfooterOff {
-  0% {
-    transform: scale(1.1);
-  }
-  100% {
-    transform: scale(1);
   }
 }
