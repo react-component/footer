@@ -20,15 +20,15 @@ const Column: React.FC<FooterColumn> = ({ prefixCls, title, items = [] }) => (
     {title && <h2>{title}</h2>}
     {items.map((item, i) => (
       <div className={`${prefixCls}-item`} key={i}>
-        {item.icon && (
-          <span className={`${prefixCls}-item-icon`}>{item.icon}</span>
-        )}
         <a href={item.url} target={item.openExternal ? '_blank' : undefined}>
+          {item.icon && (
+            <span className={`${prefixCls}-item-icon`}>{item.icon}</span>
+          )}
           {item.title}
         </a>
         {item.description && (
           <>
-            <span>-</span>
+            <span className={`${prefixCls}-item-separator`}>-</span>
             <span className={`${prefixCls}-item-description`}>
               {item.description}
             </span>

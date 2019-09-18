@@ -9,19 +9,80 @@ export default function App() {
         columns={[
           {
             title: '相关资源',
-            items: [],
+            items: [
+              {
+                title: 'Ant Design Pro',
+                url: 'https://pro.ant.design/',
+                openExternal: true,
+              },
+              {
+                title: 'Ant Design Mobile',
+                url: 'https://mobile.ant.design/',
+                openExternal: true,
+              },
+              {
+                title: 'Kitchen',
+                url: 'https://kitchen.alipay.com/',
+                description: 'Sketch 工具集',
+              },
+            ],
           },
           {
             title: '社区',
-            items: [],
+            items: [
+              {
+                title: 'Ant Design Pro',
+                url: 'https://pro.ant.design/',
+                openExternal: true,
+              },
+              {
+                title: 'Ant Design Mobile',
+                url: 'https://mobile.ant.design/',
+                openExternal: true,
+              },
+              {
+                title: 'Kitchen',
+                url: 'https://kitchen.alipay.com/',
+                description: 'Sketch 工具集',
+              },
+            ],
           },
           {
             title: '帮助',
-            items: [],
+            items: [
+              {
+                title: 'Ant Design Pro',
+                url: 'https://pro.ant.design/',
+                openExternal: true,
+              },
+              {
+                title: 'Ant Design Mobile',
+                url: 'https://mobile.ant.design/',
+                openExternal: true,
+              },
+              {
+                title: 'Kitchen',
+                url: 'https://kitchen.alipay.com/',
+                description: 'Sketch 工具集',
+              },
+            ],
           },
           {
             title: '更多产品',
-            items: [],
+            items: [
+              {
+                icon: (
+                  <img
+                    src="https://gw.alipayobjects.com/zos/rmsportal/XuVpGqBFxXplzvLjJBZB.svg"
+                    alt="yuque"
+                  />
+                ),
+                title: '语雀',
+                url: 'https://yuque.com',
+                description: '知识创作与分享工具',
+                openExternal: true,
+              },
+            ],
           },
         ]}
         bottom="Made with ❤️ by AFX"
