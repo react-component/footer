@@ -1,7 +1,5 @@
 # rc-footer 🐾
 
-🐾 Pretty Footer component used in [ant.design](https://ant.design).
-
 [![NPM version][npm-image]][npm-url]
 [![build status][travis-image]][travis-url]
 [![Test coverage][coveralls-image]][coveralls-url]
@@ -21,6 +19,8 @@
 [david-url]: https://david-dm.org/react-component/footer
 [download-image]: https://img.shields.io/npm/dm/rc-footer.svg?style=flat-square
 [download-url]: https://npmjs.org/package/rc-footer
+
+Pretty Footer component used in [ant.design](https://ant.design).
 
 ![](https://gw.alipayobjects.com/zos/antfincdn/z4ie3X8x6u/1cb23945-ec67-45a3-b521-f8da62e12255.png)
 
