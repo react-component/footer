@@ -32,7 +32,8 @@
     "compile": "father build && lessc assets/index.less assets/index.css",
     "gh-pages": "father doc deploy",
     "prepublishOnly": "npm run compile && np --no-cleanup --yolo --no-publish",
-    "lint": "eslint src/ --ext .jsx,.js,.md",
+    "lint": "eslint src/ --ext .ts,.tsx,.jsx,.js,.md",
+    "prettier": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "test": "npm run lint && father test",
     "coverage": "father test --coverage"
   },
