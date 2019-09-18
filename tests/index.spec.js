@@ -1,84 +1,10 @@
 import React from 'react';
-// eslint-disable-next-line import/no-extraneous-dependencies
 import { mount } from 'enzyme';
-import Switch from '../index';
+import Footer from '../index';
 
-describe('rc-switch', () => {
-  let switcher;
-  beforeEach(() => {
-    switcher = mount(<Switch />);
-  });
-
-  it('works', () => {
-    expect(switcher.state().checked).toBe(false);
-    switcher.simulate('click');
-    expect(switcher.state().checked).toBe(true);
-  });
-
-  it('should be checked upon right key and unchecked on left key', () => {
-    expect(switcher.state().checked).toBe(false);
-    switcher.simulate('keydown', { keyCode: 39 });
-    expect(switcher.state().checked).toBe(true);
-    switcher.simulate('keydown', { keyCode: 37 });
-    expect(switcher.state().checked).toBe(false);
-  });
-
-  it('should change from an initial checked state of true to false on click', () => {
-    const wrapper = mount(<Switch defaultChecked />);
-    expect(wrapper.state().checked).toBe(true);
-    wrapper.simulate('click');
-    expect(wrapper.state().checked).toBe(false);
-  });
-
-  it('should support onClick', () => {
-    const onClick = jest.fn();
-    const wrapper = mount(<Switch onClick={onClick} />);
-    wrapper.simulate('click');
-    expect(onClick).toHaveBeenCalledWith(true, expect.objectContaining({ type: 'click' }));
-    expect(onClick.mock.calls.length).toBe(1);
-    wrapper.simulate('click');
-    expect(onClick).toHaveBeenCalledWith(false, expect.objectContaining({ type: 'click' }));
-    expect(onClick.mock.calls.length).toBe(2);
-  });
-
-  it('should not toggle when clicked in a disabled state', () => {
-    const onChange = jest.fn();
-    const wrapper = mount(<Switch disabled checked onChange={onChange} />);
-    expect(wrapper.state().checked).toBe(true);
-    wrapper.simulate('click');
-    expect(wrapper.state().checked).toBe(true);
-    expect(onChange.mock.calls.length).toBe(0);
-  });
-
-  it('should support loading icon node', () => {
-    const wrapper = mount(<Switch loadingIcon={<span className="extra">loading</span>} />);
-    expect(wrapper.find('.extra').text()).toBe('loading');
-  });
-
-  it('focus()', () => {
-    const container = document.createElement('div');
-    document.body.appendChild(container);
-    const handleFocus = jest.fn();
-    const wrapper = mount(<Switch onFocus={handleFocus} />, { attachTo: container });
-    wrapper.instance().focus();
-    expect(handleFocus).toHaveBeenCalled();
-  });
-
-  it('blur()', () => {
-    const container = document.createElement('div');
-    document.body.appendChild(container);
-    const handleBlur = jest.fn();
-    const wrapper = mount(<Switch onBlur={handleBlur} />, { attachTo: container });
-    wrapper.instance().focus();
-    wrapper.instance().blur();
-    expect(handleBlur).toHaveBeenCalled();
-  });
-
-  it('autoFocus', () => {
-    const container = document.createElement('div');
-    document.body.appendChild(container);
-    const handleFocus = jest.fn();
-    mount(<Switch autoFocus onFocus={handleFocus} />, { attachTo: container });
-    expect(handleFocus).toHaveBeenCalled();
+describe('rc-footer', () => {
+  it('render Footer', () => {
+    const wrapper = mount(<Footer />);
+    expect(wrapper).toMatchSnapshot();
   });
 });

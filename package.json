@@ -1,12 +1,14 @@
 {
-  "name": "rc-switch",
-  "version": "1.9.0",
-  "description": "switch ui component for react",
+  "name": "rc-footer",
+  "version": "1.0.0",
+  "description": "Footer component used by ant.design",
   "keywords": [
     "react",
     "react-component",
-    "react-switch",
-    "switch"
+    "react-footer",
+    "footer",
+    "antd",
+    "ant-design"
   ],
   "main": "lib/index",
   "module": "./es/index",
@@ -15,13 +17,13 @@
     "es",
     "lib"
   ],
-  "homepage": "http://github.com/react-component/switch",
+  "homepage": "https://react-component.github.io/footer",
   "repository": {
     "type": "git",
-    "url": "git@github.com:react-component/switch.git"
+    "url": "git@github.com:react-component/footer.git"
   },
   "bugs": {
-    "url": "http://github.com/react-component/switch/issues"
+    "url": "http://github.com/react-component/footer/issues"
   },
   "license": "MIT",
   "scripts": {
@@ -31,8 +33,11 @@
     "gh-pages": "father doc deploy",
     "prepublishOnly": "npm run compile && np --no-cleanup --yolo --no-publish",
     "lint": "eslint src/ --ext .jsx,.js,.md",
-    "test": "father test",
+    "test": "npm run lint && father test",
     "coverage": "father test --coverage"
+  },
+  "dependencies": {
+    "classnames": "^2.2.1"
   },
   "devDependencies": {
     "coveralls": "^3.0.6",
@@ -40,6 +45,9 @@
     "enzyme-adapter-react-16": "^1.0.1",
     "enzyme-to-json": "^3.0.0",
     "father": "^2.13.4",
+    "husky": "^3.0.5",
+    "prettier": "^1.18.2",
+    "pretty-quick": "^1.11.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
     "react-test-renderer": "^16.0.0"
@@ -48,8 +56,9 @@
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
   },
-  "dependencies": {
-    "classnames": "^2.2.1",
-    "react-lifecycles-compat": "^3.0.4"
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   }
 }
