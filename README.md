@@ -28,10 +28,10 @@ Footer component used in [ant.design](https://ant.design).
 ## Usage
 
 ```js
-import ReactDOM from 'react-dom';
 import Footer from 'rc-footer';
+import { render } from 'react-dom';
 
-ReactDOM.render(<footFooterer />, container);
+render(<Footer />, mountNode);
 ```
 
 ## API
