@@ -27,7 +27,7 @@
   },
   "license": "MIT",
   "scripts": {
-    "start": "father doc dev --storybook",
+    "start": "cross-env NODE_ENV=development father doc dev --storybook",
     "build": "father doc build  --storybook",
     "compile": "father build && lessc assets/index.less assets/index.css",
     "gh-pages": "father doc deploy",
@@ -41,12 +41,16 @@
     "classnames": "^2.2.1"
   },
   "devDependencies": {
+    "@types/classnames": "^2.2.9",
+    "@types/react": "^16.9.2",
+    "@types/react-dom": "^16.9.0",
     "coveralls": "^3.0.6",
+    "cross-env": "^6.0.0",
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.1",
     "enzyme-to-json": "^3.0.0",
     "father": "^2.13.4",
-    "husky": "^3.0.5",
+    "np": "^5.1.0",
     "prettier": "^1.18.2",
     "pretty-quick": "^1.11.0",
     "react": "^16.0.0",
@@ -56,10 +60,5 @@
   "peerDependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "pretty-quick --staged"
-    }
   }
 }
