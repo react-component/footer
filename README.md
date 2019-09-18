@@ -9,8 +9,8 @@
 
 [npm-image]: http://img.shields.io/npm/v/rc-footer.svg?style=flat-square
 [npm-url]: http://npmjs.org/package/rc-footer
-[travis-image]: https://img.shields.io/travis/react-component/footer.svg?style=flat-square
-[travis-url]: https://travis-ci.org/react-component/footer
+[travis-image]: https://img.shields.io/travis/com/react-component/footer.svg?style=flat-square
+[travis-url]: https://travis-ci.com/react-component/footer
 [coveralls-image]: https://img.shields.io/coveralls/react-component/footer.svg?style=flat-square
 [coveralls-url]: https://coveralls.io/r/react-component/footer?branch=master
 [david-image]: https://david-dm.org/react-component/footer/status.svg?style=flat-square
