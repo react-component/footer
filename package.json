@@ -1,7 +1,7 @@
 {
   "name": "rc-footer",
   "version": "1.0.0",
-  "description": "Footer component used by ant.design",
+  "description": "Footer component used in ant.design",
   "keywords": [
     "react",
     "react-component",
