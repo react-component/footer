@@ -34,7 +34,7 @@
     "prepublishOnly": "npm run compile && np --no-cleanup --yolo --no-publish && npm run gh-pages",
     "lint": "eslint src/ --ext .ts,.tsx,.jsx,.js,.md",
     "prettier": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
-    "test": "npm run lint && father test",
+    "test": "father test",
     "coverage": "father test --coverage"
   },
   "dependencies": {
@@ -49,7 +49,7 @@
     "cross-env": "^6.0.0",
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.1",
-    "enzyme-to-json": "^3.0.0",
+    "enzyme-to-json": "^3.4.0",
     "father": "^2.13.4",
     "np": "^5.1.0",
     "prettier": "^1.18.2",
