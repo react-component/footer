@@ -20,7 +20,7 @@
 [download-image]: https://img.shields.io/npm/dm/rc-footer.svg?style=flat-square
 [download-url]: https://npmjs.org/package/rc-footer
 
-Pretty Footer component used in [ant.design](https://ant.design).
+Pretty Footer react component used in [ant.design](https://ant.design).
 
 ![](https://gw.alipayobjects.com/zos/antfincdn/z4ie3X8x6u/1cb23945-ec67-45a3-b521-f8da62e12255.png)
 
