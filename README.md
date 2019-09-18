@@ -26,7 +26,7 @@ Pretty Footer component used in [ant.design](https://ant.design).
 
 ## Live Demo
 
-http://react-component.github.io/footer/examples/
+https://react-component.github.io/footer/
 
 ## Install
 
