@@ -24,6 +24,12 @@ Footer component used in [ant.design](https://ant.design).
 [download-image]: https://img.shields.io/npm/dm/rc-footer.svg?style=flat-square
 [download-url]: https://npmjs.org/package/rc-footer
 
+![](https://gw.alipayobjects.com/zos/antfincdn/z4ie3X8x6u/1cb23945-ec67-45a3-b521-f8da62e12255.png)
+
+## Live Demo
+
+http://react-component.github.io/footer/examples/
+
 ## Install
 
 [![rc-footer](https://nodei.co/npm/rc-footer.png)](https://npmjs.org/package/rc-footer)
@@ -58,8 +64,6 @@ render(<Footer />, mountNode);
 npm install
 npm start
 ```
-
-Online demo: http://react-component.github.io/footer/examples/
 
 ## License
 
