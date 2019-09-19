@@ -9,7 +9,7 @@ export interface FooterProps {
   className?: string;
   style?: React.CSSProperties;
   backgroundColor?: string;
-  columnLayout: 'space-around' | 'space-between';
+  columnLayout?: 'space-around' | 'space-between';
 }
 
 const Footer: React.FC<FooterProps> = ({
