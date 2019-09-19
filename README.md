@@ -86,7 +86,7 @@ render(
 | openExternal   | boolean                  | false     | link target would be `_blank` if `openExternal` is ture  |
 | className      | string                   | ''        | additional class name of footer                          |
 | style          | React.CSSProperties      |           | style properties of footer                               |
-| LinkComponent  | React.ReactElement<any>  | 'a'       | the link element to render item                          |
+| LinkComponent  | React.ReactType          | 'a'       | the link element to render item                          |
 
 ## Development
 
