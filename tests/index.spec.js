@@ -5,7 +5,7 @@ import Footer from '../index';
 describe('rc-footer', () => {
   it('render empty Footer', () => {
     const wrapper = mount(<Footer />);
-    expect(wrapper).toMatchSnapshot();
+    expect(wrapper.render()).toMatchSnapshot();
   });
 
   it('render Footer', () => {
@@ -24,16 +24,25 @@ describe('rc-footer', () => {
                 title: 'Ant Design Mobile',
                 url: 'https://mobile.ant.design/',
                 openExternal: true,
+                className: 'my-class-name',
+                style: {
+                  color: 'blue',
+                },
               },
               {
                 title: 'Kitchen',
                 url: 'https://kitchen.alipay.com/',
                 description: 'Sketch 工具集',
+                LinkComponent: 'span',
               },
             ],
           },
           {
             title: '社区',
+            className: 'my-class-name',
+            style: {
+              color: 'red',
+            },
             items: [
               {
                 title: 'Ant Design Pro',
@@ -111,6 +120,6 @@ describe('rc-footer', () => {
         bottom="Made with ❤️ by AFX"
       />,
     );
-    expect(wrapper).toMatchSnapshot();
+    expect(wrapper.render()).toMatchSnapshot();
   });
 });
