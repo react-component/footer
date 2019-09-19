@@ -9,6 +9,7 @@ export interface FooterColumnItem {
   description?: React.ReactNode;
   className?: string;
   style?: React.CSSProperties;
+  LinkComponent?: React.ReactElement<any>;
 }
 
 export interface FooterColumn {
@@ -35,28 +36,34 @@ const Column: React.FC<FooterColumn> = ({
         {title}
       </h2>
     )}
-    {items.map((item, i) => (
-      <div
-        className={classNames(`${prefixCls}-item`, item.className)}
-        style={item.style}
-        key={i}
-      >
-        <a href={item.url} target={item.openExternal ? '_blank' : undefined}>
-          {item.icon && (
-            <span className={`${prefixCls}-item-icon`}>{item.icon}</span>
+    {items.map((item, i) => {
+      const LinkComponent = item.LinkComponent || 'a';
+      return (
+        <div
+          className={classNames(`${prefixCls}-item`, item.className)}
+          style={item.style}
+          key={i}
+        >
+          <LinkComponent
+            href={item.url}
+            target={item.openExternal ? '_blank' : undefined}
+          >
+            {item.icon && (
+              <span className={`${prefixCls}-item-icon`}>{item.icon}</span>
+            )}
+            {item.title}
+          </LinkComponent>
+          {item.description && (
+            <>
+              <span className={`${prefixCls}-item-separator`}>-</span>
+              <span className={`${prefixCls}-item-description`}>
+                {item.description}
+              </span>
+            </>
           )}
-          {item.title}
-        </a>
-        {item.description && (
-          <>
-            <span className={`${prefixCls}-item-separator`}>-</span>
-            <span className={`${prefixCls}-item-description`}>
-              {item.description}
-            </span>
-          </>
-        )}
-      </div>
-    ))}
+        </div>
+      );
+    })}
   </div>
 );
 
