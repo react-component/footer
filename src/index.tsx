@@ -4,9 +4,9 @@ import Column, { FooterColumn } from './column';
 
 export interface FooterProps {
   prefixCls?: string;
-  className?: string;
   bottom?: React.ReactNode;
   columns?: FooterColumn[];
+  className?: string;
   style?: React.CSSProperties;
 }
 

@@ -72,6 +72,8 @@ render(
 | icon           | ReactNode                  |           | icon that before column title                          |
 | title          | ReactNode                  |           | title of column                                        |
 | items          | [Item](#Column-Item) Array | []        | items data inside each column                          |
+| className      | string                   | ''        | additional class name of footer                          |
+| style          | React.CSSProperties      |           | style properties of footer                               |
 
 ### Column Item
 
@@ -82,7 +84,8 @@ render(
 | description    | ReactNode                |           | description of column, come after title                  |
 | url            | string                   |           | link url of item title                                   |
 | openExternal   | boolean                  | false     | link target would be `_blank` if `openExternal` is ture  |
-
+| className      | string                   | ''        | additional class name of footer                          |
+| style          | React.CSSProperties      |           | style properties of footer                               |
 
 ## Development
 

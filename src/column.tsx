@@ -1,4 +1,5 @@
 import React from 'react';
+import classNames from 'classnames';
 
 export interface FooterColumnItem {
   title: React.ReactNode;
@@ -6,6 +7,8 @@ export interface FooterColumnItem {
   openExternal?: boolean;
   icon?: React.ReactNode;
   description?: React.ReactNode;
+  className?: string;
+  style?: React.CSSProperties;
 }
 
 export interface FooterColumn {
@@ -13,6 +16,8 @@ export interface FooterColumn {
   title?: React.ReactNode;
   icon?: React.ReactNode;
   items?: FooterColumnItem[];
+  className?: string;
+  style?: React.CSSProperties;
 }
 
 const Column: React.FC<FooterColumn> = ({
@@ -20,8 +25,10 @@ const Column: React.FC<FooterColumn> = ({
   icon,
   title,
   items = [],
+  style,
+  className,
 }) => (
-  <div className={`${prefixCls}-column`}>
+  <div className={classNames(`${prefixCls}-column`, className)} style={style}>
     {(title || icon) && (
       <h2>
         {icon && <span className={`${prefixCls}-column-icon`}>{icon}</span>}
@@ -29,7 +36,11 @@ const Column: React.FC<FooterColumn> = ({
       </h2>
     )}
     {items.map((item, i) => (
-      <div className={`${prefixCls}-item`} key={i}>
+      <div
+        className={classNames(`${prefixCls}-item`, item.className)}
+        style={item.style}
+        key={i}
+      >
         <a href={item.url} target={item.openExternal ? '_blank' : undefined}>
           {item.icon && (
             <span className={`${prefixCls}-item-icon`}>{item.icon}</span>
