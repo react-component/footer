@@ -8,34 +8,60 @@ export interface FooterProps {
   columns?: FooterColumn[];
   className?: string;
   style?: React.CSSProperties;
+  backgroundColor?: string;
+  columnLayout: 'space-around' | 'space-between';
 }
 
 const Footer: React.FC<FooterProps> = ({
   prefixCls = 'rc-footer',
   className,
+  style,
   bottom,
   columns,
+  backgroundColor = '#000',
+  columnLayout,
   ...restProps
 }) => {
   const footerClassName = classNames(`${prefixCls}`, className);
   return (
-    <footer className={footerClassName} {...restProps}>
+    <footer
+      {...restProps}
+      className={footerClassName}
+      style={{
+        ...style,
+        backgroundColor,
+      }}
+    >
       <section className={`${prefixCls}-container`}>
         {columns && columns.length > 0 && (
-          <section className={`${prefixCls}-columns`}>
-            {columns.map(({
-              title, icon, style, className: columnClassName, items = [],
-            }, i) => (
-              <Column
-                key={i}
-                prefixCls={prefixCls}
-                title={title}
-                icon={icon}
-                items={items}
-                style={style}
-                className={columnClassName}
-              />
-            ))}
+          <section
+            className={`${prefixCls}-columns`}
+            style={{
+              justifyContent: columnLayout,
+            }}
+          >
+            {columns.map(
+              (
+                {
+                  title,
+                  icon,
+                  style: columnStyle,
+                  className: columnClassName,
+                  items = [],
+                },
+                i,
+              ) => (
+                <Column
+                  key={i}
+                  prefixCls={prefixCls}
+                  title={title}
+                  icon={icon}
+                  items={items}
+                  style={columnStyle}
+                  className={columnClassName}
+                />
+              ),
+            )}
           </section>
         )}
       </section>

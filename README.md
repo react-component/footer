@@ -64,6 +64,8 @@ render(
 | style          | React.CSSProperties      |           | style properties of footer                               |
 | columns        | [Column](#Column) Array  | []        | columns data inside footer                               |
 | bottom         | ReactNode                |           | extra bottom area beneath footer columns                 |
+| backgroundColor| string                   | '#000'    | background color of footer                               |
+| columnLayout   | 'space-around' or 'space-between'    | 'space-around' | justify-content value of columns element|
 
 ### Column
 

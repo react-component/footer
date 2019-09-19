@@ -1,3 +1,8 @@
+## 0.4.0
+
+- support `columnLayout`.
+- support `backgroundColor`.
+
 ## 0.3.0
 
 - support `style` and `className` for footer column and footer item.

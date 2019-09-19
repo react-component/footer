@@ -122,4 +122,16 @@ describe('rc-footer', () => {
     );
     expect(wrapper.render()).toMatchSnapshot();
   });
+
+  it('render Footer with columnLayout and backgroundColor', () => {
+    const wrapper = mount(
+      <Footer
+        columns={[{ title: 'title' }, { title: 'title' }]}
+        columnLayout="space-between"
+        backgroundColor="transparent"
+        style={{ color: 'red' }}
+      />,
+    );
+    expect(wrapper.render()).toMatchSnapshot();
+  });
 });
