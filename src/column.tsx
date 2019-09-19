@@ -46,7 +46,7 @@ const Column: React.FC<FooterColumn> = ({
         >
           <LinkComponent
             href={item.url}
-            to={typeof LinkComponent !== 'string' ? item.url : 'undefined'}
+            to={typeof LinkComponent !== 'string' ? item.url : undefined}
             target={item.openExternal ? '_blank' : undefined}
           >
             {item.icon && (
