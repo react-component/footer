@@ -36,6 +36,7 @@ https://react-component.github.io/footer/
 
 ```js
 import Footer from 'rc-footer';
+import 'rc-footer/assets/index.css'; // import 'rc-footer/asssets/index.less';
 import { render } from 'react-dom';
 
 render(
