@@ -6,6 +6,7 @@ export interface FooterProps {
   prefixCls?: string;
   bottom?: React.ReactNode;
   columns?: FooterColumn[];
+  theme?: 'dark' | 'light';
   className?: string;
   style?: React.CSSProperties;
   backgroundColor?: string;
@@ -18,11 +19,14 @@ const Footer: React.FC<FooterProps> = ({
   style,
   bottom,
   columns,
-  backgroundColor = '#000',
+  backgroundColor,
   columnLayout,
+  theme = 'dark',
   ...restProps
 }) => {
-  const footerClassName = classNames(`${prefixCls}`, className);
+  const footerClassName = classNames(`${prefixCls}`, className, {
+    [`${prefixCls}-${theme}`]: !!theme,
+  });
   return (
     <footer
       {...restProps}

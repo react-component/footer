@@ -1,16 +1,13 @@
-import React from 'react';
-import { mount } from 'enzyme';
-import Footer from '../index';
+import '../assets/index.less';
+import React, { useState } from 'react';
+import Footer from '../src/index';
 
-describe('rc-footer', () => {
-  it('render empty Footer', () => {
-    const wrapper = mount(<Footer />);
-    expect(wrapper.render()).toMatchSnapshot();
-  });
-
-  it('render Footer', () => {
-    const wrapper = mount(
+export default function App() {
+  const [theme, setTheme] = useState('light');
+  return (
+    <div>
       <Footer
+        theme={theme}
         columns={[
           {
             title: '相关资源',
@@ -24,25 +21,16 @@ describe('rc-footer', () => {
                 title: 'Ant Design Mobile',
                 url: 'https://mobile.ant.design/',
                 openExternal: true,
-                className: 'my-class-name',
-                style: {
-                  color: 'blue',
-                },
               },
               {
                 title: 'Kitchen',
                 url: 'https://kitchen.alipay.com/',
                 description: 'Sketch 工具集',
-                LinkComponent: 'span',
               },
             ],
           },
           {
             title: '社区',
-            className: 'my-class-name',
-            style: {
-              color: 'red',
-            },
             items: [
               {
                 title: 'Ant Design Pro',
@@ -114,35 +102,18 @@ describe('rc-footer', () => {
                 description: '中台建站平台',
                 openExternal: true,
               },
+              {
+                title: (
+                  <button type="button" onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}>
+                    Switch Theme to {theme === 'dark' ? 'light' : 'dark'}
+                  </button>
+                ),
+              },
             ],
           },
         ]}
         bottom="Made with ❤️ by AFX"
-      />,
-    );
-    expect(wrapper.render()).toMatchSnapshot();
-  });
-
-  it('render Footer with columnLayout and backgroundColor', () => {
-    const wrapper = mount(
-      <Footer
-        columns={[{ title: 'title' }, { title: 'title' }]}
-        columnLayout="space-between"
-        backgroundColor="transparent"
-        style={{ color: 'red' }}
-      />,
-    );
-    expect(wrapper.render()).toMatchSnapshot();
-  });
-
-  it('render light theme Footer', () => {
-    const wrapper = mount(
-      <Footer
-        columns={[{ title: 'title' }, { title: 'title' }]}
-        theme="light"
-        style={{ color: 'red' }}
-      />,
-    );
-    expect(wrapper.render()).toMatchSnapshot();
-  });
-});
+      />
+    </div>
+  );
+}

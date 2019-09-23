@@ -1,3 +1,7 @@
+## 0.5.0
+
+- support `theme="dark|light"`.
+
 ## 0.4.0
 
 - support `columnLayout`.
