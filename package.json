@@ -36,6 +36,7 @@
     "prepublishOnly": "npm run compile && np --yolo --no-publish && npm run gh-pages",
     "lint": "eslint src/ --ext .ts,.tsx,.jsx,.js,.md",
     "prettier": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
+    "pretty-quick": "pretty-quick",
     "test": "father test",
     "coverage": "father test --coverage"
   },
@@ -53,6 +54,7 @@
     "enzyme-adapter-react-16": "^1.0.1",
     "enzyme-to-json": "^3.4.0",
     "father": "^2.13.4",
+    "husky": "^3.0.9",
     "less": "^3.10.3",
     "np": "^5.1.0",
     "prettier": "^1.18.2",
@@ -64,6 +66,11 @@
   "peerDependencies": {
     "react": "^16.0.0",
     "react-dom": "^16.0.0"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "pretty-quick --staged"
+    }
   },
   "cnpm": {
     "mode": "npm"
