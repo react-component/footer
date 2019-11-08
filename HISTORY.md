@@ -1,3 +1,7 @@
+## 0.6.0
+
+- support `maxColumnsPerRow`.
+
 ## 0.5.0
 
 - support `theme="dark|light"`.
