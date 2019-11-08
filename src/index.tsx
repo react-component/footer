@@ -5,7 +5,7 @@ import Column, { FooterColumn } from './column';
 export interface FooterProps {
   prefixCls?: string;
   bottom?: React.ReactNode;
-  maxColumnsPerRow: number;
+  maxColumnsPerRow?: number;
   columns?: FooterColumn[];
   theme?: 'dark' | 'light';
   className?: string;
@@ -62,7 +62,7 @@ const Footer: React.FC<FooterProps> = ({
               ) => {
                 const styleObject = { ...columnStyle } as React.CSSProperties;
                 if (shouldWrap) {
-                  styleObject.flex = `0 0 ${100 / (maxColumnsPerRow + 1) +
+                  styleObject.flex = `0 0 ${100 / (maxColumnsPerRow! + 1) +
                     0.1}%`;
                 }
                 return (
