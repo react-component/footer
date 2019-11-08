@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div>
       <Footer
-        maxColumnsCountPerRow={4}
+        maxColumnsPerRow={4}
         columns={[
           {
             title: '相关资源',
