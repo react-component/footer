@@ -68,6 +68,7 @@ render(
 | theme          | 'light' \| 'dark'        | 'dark'    | preset theme of footer                                   |
 | backgroundColor| string                   | '#000'    | background color of footer                               |
 | columnLayout   | 'space-around' or 'space-between'    | 'space-around' | justify-content value of columns element|
+| maxColumnsPerRow | number | -                         | max count of columns for each row                        |
 
 ### Column
 

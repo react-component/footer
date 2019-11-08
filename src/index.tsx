@@ -5,6 +5,7 @@ import Column, { FooterColumn } from './column';
 export interface FooterProps {
   prefixCls?: string;
   bottom?: React.ReactNode;
+  maxColumnsPerRow: number;
   columns?: FooterColumn[];
   theme?: 'dark' | 'light';
   className?: string;
@@ -19,6 +20,7 @@ const Footer: React.FC<FooterProps> = ({
   style,
   bottom,
   columns,
+  maxColumnsPerRow,
   backgroundColor,
   columnLayout,
   theme = 'dark',
@@ -27,6 +29,8 @@ const Footer: React.FC<FooterProps> = ({
   const footerClassName = classNames(`${prefixCls}`, className, {
     [`${prefixCls}-${theme}`]: !!theme,
   });
+  const shouldWrap =
+    typeof maxColumnsPerRow === 'number' && maxColumnsPerRow > 0;
   return (
     <footer
       {...restProps}
@@ -42,6 +46,7 @@ const Footer: React.FC<FooterProps> = ({
             className={`${prefixCls}-columns`}
             style={{
               justifyContent: columnLayout,
+              flexWrap: shouldWrap ? 'wrap' : undefined,
             }}
           >
             {columns.map(
@@ -54,17 +59,24 @@ const Footer: React.FC<FooterProps> = ({
                   items = [],
                 },
                 i,
-              ) => (
-                <Column
-                  key={i}
-                  prefixCls={prefixCls}
-                  title={title}
-                  icon={icon}
-                  items={items}
-                  style={columnStyle}
-                  className={columnClassName}
-                />
-              ),
+              ) => {
+                const styleObject = { ...columnStyle } as React.CSSProperties;
+                if (shouldWrap) {
+                  styleObject.flex = `0 0 ${100 / (maxColumnsPerRow + 1) +
+                    0.1}%`;
+                }
+                return (
+                  <Column
+                    key={i}
+                    prefixCls={prefixCls}
+                    title={title}
+                    icon={icon}
+                    items={items}
+                    style={styleObject}
+                    className={columnClassName}
+                  />
+                );
+              },
             )}
           </section>
         )}
