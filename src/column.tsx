@@ -3,7 +3,7 @@ import classNames from 'classnames';
 
 export interface FooterColumnItem {
   title: React.ReactNode;
-  url: string;
+  url?: string;
   openExternal?: boolean;
   icon?: React.ReactNode;
   description?: React.ReactNode;
