@@ -22,7 +22,6 @@ exports[`rc-footer render Footer 1`] = `
           <a
             href="https://pro.ant.design/"
             target="_blank"
-            rel="noopener noreferrer"
           >
             Ant Design Pro
           </a>
@@ -34,7 +33,6 @@ exports[`rc-footer render Footer 1`] = `
           <a
             href="https://mobile.ant.design/"
             target="_blank"
-            rel="noopener noreferrer"
           >
             Ant Design Mobile
           </a>
@@ -72,7 +70,6 @@ exports[`rc-footer render Footer 1`] = `
           <a
             href="https://pro.ant.design/"
             target="_blank"
-            rel="noopener noreferrer"
           >
             Ant Design Pro
           </a>
@@ -83,7 +80,6 @@ exports[`rc-footer render Footer 1`] = `
           <a
             href="https://mobile.ant.design/"
             target="_blank"
-            rel="noopener noreferrer"
           >
             Ant Design Mobile
           </a>
@@ -120,7 +116,6 @@ exports[`rc-footer render Footer 1`] = `
           <a
             href="https://pro.ant.design/"
             target="_blank"
-            rel="noopener noreferrer"
           >
             Ant Design Pro
           </a>
@@ -131,7 +126,6 @@ exports[`rc-footer render Footer 1`] = `
           <a
             href="https://mobile.ant.design/"
             target="_blank"
-            rel="noopener noreferrer"
           >
             Ant Design Mobile
           </a>
@@ -176,7 +170,6 @@ exports[`rc-footer render Footer 1`] = `
           <a
             href="https://yuque.com"
             target="_blank"
-            rel="noopener noreferrer"
           >
             <span
               class="rc-footer-item-icon"
@@ -205,7 +198,6 @@ exports[`rc-footer render Footer 1`] = `
           <a
             href="https://yunfengdie.com"
             target="_blank"
-            rel="noopener noreferrer"
           >
             <span
               class="rc-footer-item-icon"
@@ -298,7 +290,6 @@ exports[`rc-footer render Footer with maxColumnsPerRow 1`] = `
           <a
             href="https://pro.ant.design/"
             target="_blank"
-            rel="noopener noreferrer"
           >
             Ant Design Pro
           </a>
@@ -310,7 +301,6 @@ exports[`rc-footer render Footer with maxColumnsPerRow 1`] = `
           <a
             href="https://mobile.ant.design/"
             target="_blank"
-            rel="noopener noreferrer"
           >
             Ant Design Mobile
           </a>
@@ -348,7 +338,6 @@ exports[`rc-footer render Footer with maxColumnsPerRow 1`] = `
           <a
             href="https://pro.ant.design/"
             target="_blank"
-            rel="noopener noreferrer"
           >
             Ant Design Pro
           </a>
@@ -359,7 +348,6 @@ exports[`rc-footer render Footer with maxColumnsPerRow 1`] = `
           <a
             href="https://mobile.ant.design/"
             target="_blank"
-            rel="noopener noreferrer"
           >
             Ant Design Mobile
           </a>
@@ -397,7 +385,6 @@ exports[`rc-footer render Footer with maxColumnsPerRow 1`] = `
           <a
             href="https://pro.ant.design/"
             target="_blank"
-            rel="noopener noreferrer"
           >
             Ant Design Pro
           </a>
@@ -408,7 +395,6 @@ exports[`rc-footer render Footer with maxColumnsPerRow 1`] = `
           <a
             href="https://mobile.ant.design/"
             target="_blank"
-            rel="noopener noreferrer"
           >
             Ant Design Mobile
           </a>
@@ -454,7 +440,6 @@ exports[`rc-footer render Footer with maxColumnsPerRow 1`] = `
           <a
             href="https://yuque.com"
             target="_blank"
-            rel="noopener noreferrer"
           >
             <span
               class="rc-footer-item-icon"
@@ -483,7 +468,6 @@ exports[`rc-footer render Footer with maxColumnsPerRow 1`] = `
           <a
             href="https://yunfengdie.com"
             target="_blank"
-            rel="noopener noreferrer"
           >
             <span
               class="rc-footer-item-icon"
