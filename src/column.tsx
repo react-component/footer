@@ -48,6 +48,7 @@ const Column: React.FC<FooterColumn> = ({
             href={item.url}
             to={typeof LinkComponent !== 'string' ? item.url : undefined}
             target={item.openExternal ? '_blank' : undefined}
+            rel={item.openExternal ? 'noopener noreferrer' : undefined}
           >
             {item.icon && (
               <span className={`${prefixCls}-item-icon`}>{item.icon}</span>

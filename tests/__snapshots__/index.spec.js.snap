@@ -21,6 +21,7 @@ exports[`rc-footer render Footer 1`] = `
         >
           <a
             href="https://pro.ant.design/"
+            rel="noopener noreferrer"
             target="_blank"
           >
             Ant Design Pro
@@ -32,6 +33,7 @@ exports[`rc-footer render Footer 1`] = `
         >
           <a
             href="https://mobile.ant.design/"
+            rel="noopener noreferrer"
             target="_blank"
           >
             Ant Design Mobile
@@ -69,6 +71,7 @@ exports[`rc-footer render Footer 1`] = `
         >
           <a
             href="https://pro.ant.design/"
+            rel="noopener noreferrer"
             target="_blank"
           >
             Ant Design Pro
@@ -79,6 +82,7 @@ exports[`rc-footer render Footer 1`] = `
         >
           <a
             href="https://mobile.ant.design/"
+            rel="noopener noreferrer"
             target="_blank"
           >
             Ant Design Mobile
@@ -115,6 +119,7 @@ exports[`rc-footer render Footer 1`] = `
         >
           <a
             href="https://pro.ant.design/"
+            rel="noopener noreferrer"
             target="_blank"
           >
             Ant Design Pro
@@ -125,6 +130,7 @@ exports[`rc-footer render Footer 1`] = `
         >
           <a
             href="https://mobile.ant.design/"
+            rel="noopener noreferrer"
             target="_blank"
           >
             Ant Design Mobile
@@ -169,6 +175,7 @@ exports[`rc-footer render Footer 1`] = `
         >
           <a
             href="https://yuque.com"
+            rel="noopener noreferrer"
             target="_blank"
           >
             <span
@@ -197,6 +204,7 @@ exports[`rc-footer render Footer 1`] = `
         >
           <a
             href="https://yunfengdie.com"
+            rel="noopener noreferrer"
             target="_blank"
           >
             <span
@@ -289,6 +297,7 @@ exports[`rc-footer render Footer with maxColumnsPerRow 1`] = `
         >
           <a
             href="https://pro.ant.design/"
+            rel="noopener noreferrer"
             target="_blank"
           >
             Ant Design Pro
@@ -300,6 +309,7 @@ exports[`rc-footer render Footer with maxColumnsPerRow 1`] = `
         >
           <a
             href="https://mobile.ant.design/"
+            rel="noopener noreferrer"
             target="_blank"
           >
             Ant Design Mobile
@@ -337,6 +347,7 @@ exports[`rc-footer render Footer with maxColumnsPerRow 1`] = `
         >
           <a
             href="https://pro.ant.design/"
+            rel="noopener noreferrer"
             target="_blank"
           >
             Ant Design Pro
@@ -347,6 +358,7 @@ exports[`rc-footer render Footer with maxColumnsPerRow 1`] = `
         >
           <a
             href="https://mobile.ant.design/"
+            rel="noopener noreferrer"
             target="_blank"
           >
             Ant Design Mobile
@@ -384,6 +396,7 @@ exports[`rc-footer render Footer with maxColumnsPerRow 1`] = `
         >
           <a
             href="https://pro.ant.design/"
+            rel="noopener noreferrer"
             target="_blank"
           >
             Ant Design Pro
@@ -394,6 +407,7 @@ exports[`rc-footer render Footer with maxColumnsPerRow 1`] = `
         >
           <a
             href="https://mobile.ant.design/"
+            rel="noopener noreferrer"
             target="_blank"
           >
             Ant Design Mobile
@@ -439,6 +453,7 @@ exports[`rc-footer render Footer with maxColumnsPerRow 1`] = `
         >
           <a
             href="https://yuque.com"
+            rel="noopener noreferrer"
             target="_blank"
           >
             <span
@@ -467,6 +482,7 @@ exports[`rc-footer render Footer with maxColumnsPerRow 1`] = `
         >
           <a
             href="https://yunfengdie.com"
+            rel="noopener noreferrer"
             target="_blank"
           >
             <span
