@@ -1,24 +1,28 @@
 # rc-footer 🐾
 
 [![NPM version][npm-image]][npm-url]
-[![build status][travis-image]][travis-url]
-[![Codecov][codecov-image]][codecov-url]
-[![david deps][david-image]][david-url]
-[![david devDeps][david-dev-image]][david-dev-url]
 [![npm download][download-image]][download-url]
+[![build status][circleci-image]][circleci-url]
+[![Test coverage][coveralls-image]][coveralls-url]
+[![Dependencies][david-image]](david-url)
+[![DevDependencies][david-dev-image]][david-dev-url]
+[![bundle size][bundlephobia-image]][bundlephobia-url]
 
 [npm-image]: http://img.shields.io/npm/v/rc-footer.svg?style=flat-square
 [npm-url]: http://npmjs.org/package/rc-footer
-[travis-image]: https://img.shields.io/travis/com/react-component/footer.svg?style=flat-square
-[travis-url]: https://travis-ci.com/react-component/footer
-[codecov-image]: https://img.shields.io/codecov/c/github/react-component/footer/master.svg?style=flat-square
-[codecov-url]: https://codecov.io/gh/react-component/footer/branch/master
-[david-image]: https://david-dm.org/react-component/footer/status.svg?style=flat-square
-[david-dev-url]: https://david-dm.org/react-component/footer?type=dev
-[david-dev-image]: https://david-dm.org/react-component/footer/dev-status.svg?style=flat-square
+[circleci-image]: https://img.shields.io/circleci/build/github/react-component/footer.svg?style=flat-square
+[circleci-url]: https://circleci.com/gh/react-component/footer
 [david-url]: https://david-dm.org/react-component/footer
+[david-image]: https://img.shields.io/david/react-component/footer.svg?style=flat-square
+[david-dev-url]: https://david-dm.org/react-component/footer?type=dev
+[david-dev-image]: https://img.shields.io/david/react-component/footer.svg?style=flat-square&type=dev
+[coveralls-image]: https://img.shields.io/coveralls/react-component/footer.svg?style=flat-square
+[coveralls-url]: https://coveralls.io/r/react-component/footer?branch=maste
 [download-image]: https://img.shields.io/npm/dm/rc-footer.svg?style=flat-square
 [download-url]: https://npmjs.org/package/rc-footer
+[bundlephobia-url]: https://bundlephobia.com/result?p=rc-footer
+[bundlephobia-image]: https://badgen.net/bundlephobia/minzip/rc-footer
+
 
 Pretty Footer react component used in [ant.design](https://ant.design) and [antv.vision](https://antv.vision).
 
