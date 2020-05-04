@@ -15,9 +15,9 @@
 [codecov-image]: https://img.shields.io/codecov/c/github/react-component/footer/master.svg?style=flat-square
 [codecov-url]: https://codecov.io/gh/react-component/footer/branch/master
 [david-url]: https://david-dm.org/react-component/footer
-[david-image]: https://img.shields.io/david/react-component/footer.svg?style=flat-square
+[david-image]: https://david-dm.org/react-component/footer/status.svg?style=flat-square
 [david-dev-url]: https://david-dm.org/react-component/footer?type=dev
-[david-dev-image]: https://img.shields.io/david/react-component/footer.svg?style=flat-square&type=dev
+[david-dev-image]: https://david-dm.org/react-component/footer/dev-status.svg?style=flat-square
 [download-image]: https://img.shields.io/npm/dm/rc-footer.svg?style=flat-square
 [download-url]: https://npmjs.org/package/rc-footer
 [bundlephobia-url]: https://bundlephobia.com/result?p=rc-footer
