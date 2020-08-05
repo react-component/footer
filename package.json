@@ -41,6 +41,7 @@
     "coverage": "father test --coverage"
   },
   "dependencies": {
+    "@babel/runtime": "^7.11.1",
     "classnames": "^2.2.1"
   },
   "devDependencies": {
