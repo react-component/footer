@@ -2,7 +2,7 @@
 
 [![NPM version][npm-image]][npm-url]
 [![npm download][download-image]][download-url]
-[![build status][travis-image]][travis-url]
+[![build status][github-actions-image]][github-actions-url]
 [![Codecov][codecov-image]][codecov-url]
 [![Dependencies][david-image]](david-url)
 [![DevDependencies][david-dev-image]][david-dev-url]
@@ -10,8 +10,8 @@
 
 [npm-image]: http://img.shields.io/npm/v/rc-footer.svg?style=flat-square
 [npm-url]: http://npmjs.org/package/rc-footer
-[travis-image]: https://img.shields.io/travis/com/react-component/footer.svg?style=flat-square
-[travis-url]: https://travis-ci.com/react-component/footer
+[github-actions-image]: https://github.com/react-component/footer/workflows/CI/badge.svg
+[github-actions-url]: https://github.com/react-component/footer/actions
 [codecov-image]: https://img.shields.io/codecov/c/github/react-component/footer/master.svg?style=flat-square
 [codecov-url]: https://codecov.io/gh/react-component/footer/branch/master
 [david-url]: https://david-dm.org/react-component/footer
@@ -22,7 +22,6 @@
 [download-url]: https://npmjs.org/package/rc-footer
 [bundlephobia-url]: https://bundlephobia.com/result?p=rc-footer
 [bundlephobia-image]: https://badgen.net/bundlephobia/minzip/rc-footer
-
 
 Pretty Footer react component used in [ant.design](https://ant.design) and [antv.vision](https://antv.vision).
 
