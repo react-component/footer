@@ -2,6 +2,8 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "commonjs",
+    "moduleResolution": "node",
+    "baseUrl": "./",
     "lib": ["dom", "es2017"],
     "jsx": "react",
     "strict": true,
@@ -9,6 +11,11 @@
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
-    "declaration": true
+    "declaration": true,
+    "paths": {
+      "@/*": ["src/*"],
+      "@@/*": ["src/.umi/*"],
+      "rc-footer": ["src/index.tsx"]
+    }
   }
 }
