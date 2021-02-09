@@ -1,11 +1,13 @@
-import '../assets/index.less';
-import React from 'react';
-import Footer from '../src/index';
+import '../../assets/index.less';
+import React, { useState } from 'react';
+import Footer from 'rc-footer';
 
 export default function App() {
+  const [theme, setTheme] = useState('light');
   return (
     <div>
       <Footer
+        theme={theme}
         columns={[
           {
             title: '相关资源',
@@ -99,6 +101,18 @@ export default function App() {
                 url: 'https://yunfengdie.com',
                 description: '中台建站平台',
                 openExternal: true,
+              },
+              {
+                title: (
+                  <button
+                    type="button"
+                    onClick={() =>
+                      setTheme(theme === 'dark' ? 'light' : 'dark')
+                    }
+                  >
+                    Switch Theme to {theme === 'dark' ? 'light' : 'dark'}
+                  </button>
+                ),
               },
             ],
           },
