@@ -33,7 +33,7 @@
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d .doc",
     "compile": "father build && lessc assets/index.less assets/index.css",
-    "gh-pages": "npm run build && father doc deploy",
+    "gh-pages": "npm run docs:build && father doc deploy",
     "prepublishOnly": "npm run compile && np --yolo --no-publish && npm run gh-pages",
     "lint": "eslint src/ --ext .ts,.tsx,.jsx,.js,.md",
     "prettier": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
