@@ -1,7 +1,7 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "commonjs",
+    "module": "ESNext",
     "moduleResolution": "node",
     "baseUrl": "./",
     "lib": ["dom", "es2017"],
