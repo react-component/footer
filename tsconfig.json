@@ -14,7 +14,7 @@
     "declaration": true,
     "paths": {
       "@/*": ["src/*"],
-      "@@/*": ["src/.umi/*"],
+      "@@/*": [".dumi/tmp/*"],
       "rc-footer": ["src/index.tsx"]
     }
   }
