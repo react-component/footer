@@ -1,21 +1,22 @@
 {
   "compilerOptions": {
     "target": "esnext",
-    "module": "ESNext",
     "moduleResolution": "node",
     "baseUrl": "./",
-    "lib": ["dom", "es2017"],
-    "jsx": "react",
-    "strict": true,
-    "esModuleInterop": true,
-    "experimentalDecorators": true,
-    "emitDecoratorMetadata": true,
-    "skipLibCheck": true,
+    "jsx": "preserve",
     "declaration": true,
+    "skipLibCheck": true,
+    "esModuleInterop": true,
     "paths": {
-      "@/*": ["src/*"],
-      "@@/*": [".dumi/tmp/*"],
-      "rc-footer": ["src/index.tsx"]
-    }
+      "@/*": [
+        "src/*"
+      ],
+      "@@/*": [
+        ".dumi/tmp/*"
+      ],
+      "rc-footer": [
+        "src/index.ts"
+      ]
+    },
   }
 }
