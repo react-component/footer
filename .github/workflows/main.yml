@@ -20,7 +20,7 @@ jobs:
           key: lock-${{ github.sha }}
 
       - name: create package-lock.json
-        run: npm i --package-lock-only --ignore-scripts --legacy-peer-deps
+        run: npm i --package-lock-only --ignore-scripts
 
       - name: hack for singe file
         run: |
@@ -38,7 +38,7 @@ jobs:
 
       - name: install
         if: steps.node_modules_cache_id.outputs.cache-hit != 'true'
-        run: npm ci --legacy-peer-deps
+        run: npm ci
 
   lint:
     runs-on: ubuntu-latest
@@ -59,7 +59,10 @@ jobs:
           key: node_modules-${{ hashFiles('**/package-temp-dir/package-lock.json') }}
 
       - name: lint
-        run: npm run lint
+        run: npm run lint && npm run type:check
+
+      - name: type check
+        run: npm run type:check
 
     needs: setup
 
@@ -105,7 +108,7 @@ jobs:
           key: node_modules-${{ hashFiles('**/package-temp-dir/package-lock.json') }}
 
       - name: coverage
-        run: npm run coverage
+        run: npm test -- --coverage
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4

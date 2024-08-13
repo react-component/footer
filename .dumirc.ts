@@ -1,22 +1,18 @@
-// more config: https://d.umijs.org/config
 import { defineConfig } from 'dumi';
 
+const basePath = process.env.GH_PAGES ? '/footer/' : '/';
+const publicPath = process.env.GH_PAGES ? '/footer/' : '/';
+
 export default defineConfig({
-  favicons: ['https://avatars0.githubusercontent.com/u/9441414?s=200&v=4'],
+  favicons: [
+    'https://avatars0.githubusercontent.com/u/9441414?s=200&v=4',
+  ],
   themeConfig: {
-    name: 'rc-footer',
-    logo: 'https://avatars0.githubusercontent.com/u/9441414?s=200&v=4',
+    name: 'Footer',
+    logo: 'https://avatars0.githubusercontent.com/u/9441414?s=200&v=4'
   },
   outputPath: '.doc',
   exportStatic: {},
-  base: '/footer/',
-  publicPath: '/footer/',
-  hash: true,
-  styles: [
-    `
-      .markdown table {
-        width: auto !important;
-      }
-    `,
-  ],
+  base: basePath,
+  publicPath,
 });

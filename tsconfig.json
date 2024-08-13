@@ -12,10 +12,12 @@
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
     "declaration": true,
+    "types": ["jest", "node"],
     "paths": {
       "@/*": ["src/*"],
       "@@/*": [".dumi/tmp/*"],
       "rc-footer": ["src/index.tsx"]
     }
-  }
+  },
+  "include": [".dumi/**/*", ".dumirc.ts", "src", "tests", "docs/examples"],
 }
