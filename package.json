@@ -51,7 +51,7 @@
     "@types/classnames": "^2.2.9",
     "@types/react": "^17.0.13",
     "@types/react-dom": "^16.9.0",
-    "@umijs/fabric": "^2.0.8",
+    "@umijs/fabric": "^4.0.1",
     "coveralls": "^3.0.6",
     "cross-env": "^7.0.2",
     "dumi": "^2.0.0",
