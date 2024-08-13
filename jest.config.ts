@@ -8,8 +8,8 @@ const config: Config.InitialOptions = {
   ...defaultConfig,
   setupFilesAfterEnv: [
     ...(defaultConfig.setupFilesAfterEnv || []),
-    './tests/setupFilesAfterEnv.ts'
+    './tests/setupFilesAfterEnv.ts',
   ],
-}
+};
 
 export default config;

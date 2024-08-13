@@ -63,8 +63,9 @@ const Footer: React.FC<FooterProps> = ({
               ) => {
                 const styleObject = { ...columnStyle } as React.CSSProperties;
                 if (shouldWrap) {
-                  styleObject.flex = `0 0 ${100 / (maxColumnsPerRow! + 1) +
-                    0.1}%`;
+                  styleObject.flex = `0 0 ${
+                    100 / (maxColumnsPerRow! + 1) + 0.1
+                  }%`;
                 }
                 return (
                   <Column
