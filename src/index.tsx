@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
-import Column, { type FooterColumn } from './column';
+import Column from './column';
+import type { FooterColumn } from './column';
 
 export interface FooterProps {
   prefixCls?: string;

@@ -1,6 +1,6 @@
 import React from 'react';
 import { mount } from 'enzyme';
-import Footer from '../index';
+import Footer from '../src';
 
 describe('rc-footer', () => {
   it('render empty Footer', () => {
