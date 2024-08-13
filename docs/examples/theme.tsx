@@ -1,9 +1,9 @@
 import '../../assets/index.less';
 import React, { useState } from 'react';
-import Footer from 'rc-footer';
+import Footer, { type FooterProps } from 'rc-footer';
 
 export default function App() {
-  const [theme, setTheme] = useState('light');
+  const [theme, setTheme] = useState<FooterProps['theme']>('light');
   return (
     <div>
       <Footer

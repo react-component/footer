@@ -1,15 +1,15 @@
 import React from 'react';
-import { mount } from 'enzyme';
-import Footer from '../index';
+import { render } from '@testing-library/react';
+import Footer from '../src';
 
 describe('rc-footer', () => {
   it('render empty Footer', () => {
-    const wrapper = mount(<Footer />);
-    expect(wrapper.render()).toMatchSnapshot();
+    const wrapper = render(<Footer />);
+    expect(wrapper).toMatchSnapshot();
   });
 
   it('render Footer', () => {
-    const wrapper = mount(
+    const wrapper = render(
       <Footer
         columns={[
           {
@@ -120,11 +120,11 @@ describe('rc-footer', () => {
         bottom="Made with ❤️ by AFX"
       />,
     );
-    expect(wrapper.render()).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 
   it('render Footer with columnLayout and backgroundColor', () => {
-    const wrapper = mount(
+    const wrapper = render(
       <Footer
         columns={[{ title: 'title' }, { title: 'title' }]}
         columnLayout="space-between"
@@ -132,22 +132,22 @@ describe('rc-footer', () => {
         style={{ color: 'red' }}
       />,
     );
-    expect(wrapper.render()).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 
   it('render light theme Footer', () => {
-    const wrapper = mount(
+    const wrapper = render(
       <Footer
         columns={[{ title: 'title' }, { title: 'title' }]}
         theme="light"
         style={{ color: 'red' }}
       />,
     );
-    expect(wrapper.render()).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 
   it('render Footer with maxColumnsPerRow', () => {
-    const wrapper = mount(
+    const wrapper = render(
       <Footer
         maxColumnsPerRow={2}
         columns={[
@@ -259,6 +259,6 @@ describe('rc-footer', () => {
         bottom="Made with ❤️ by AFX"
       />,
     );
-    expect(wrapper.render()).toMatchSnapshot();
+    expect(wrapper).toMatchSnapshot();
   });
 });

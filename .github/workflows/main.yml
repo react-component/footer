@@ -11,7 +11,7 @@ jobs:
 
       - uses: actions/setup-node@v4
         with:
-          node-version: '20'
+          node-version: 20
 
       - name: cache package-lock.json
         uses: actions/cache@v4
@@ -59,7 +59,10 @@ jobs:
           key: node_modules-${{ hashFiles('**/package-temp-dir/package-lock.json') }}
 
       - name: lint
-        run: npm run lint
+        run: npm run lint && npm run type:check
+
+      - name: type check
+        run: npm run type:check
 
     needs: setup
 
@@ -105,7 +108,7 @@ jobs:
           key: node_modules-${{ hashFiles('**/package-temp-dir/package-lock.json') }}
 
       - name: coverage
-        run: npm run coverage
+        run: npm test -- --coverage
 
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v4

@@ -1,6 +1,7 @@
 import React from 'react';
 import classNames from 'classnames';
-import Column, { FooterColumn } from './column';
+import Column from './column';
+import type { FooterColumn } from './column';
 
 export interface FooterProps {
   prefixCls?: string;
@@ -62,8 +63,9 @@ const Footer: React.FC<FooterProps> = ({
               ) => {
                 const styleObject = { ...columnStyle } as React.CSSProperties;
                 if (shouldWrap) {
-                  styleObject.flex = `0 0 ${100 / (maxColumnsPerRow! + 1) +
-                    0.1}%`;
+                  styleObject.flex = `0 0 ${
+                    100 / (maxColumnsPerRow! + 1) + 0.1
+                  }%`;
                 }
                 return (
                   <Column
