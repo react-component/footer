@@ -9,8 +9,8 @@
 
 [npm-image]: http://img.shields.io/npm/v/rc-footer.svg?style=flat-square
 [npm-url]: http://npmjs.org/package/rc-footer
-[github-actions-image]: https://github.com/react-component/footer/workflows/CI/badge.svg
-[github-actions-url]: https://github.com/react-component/footer/actions
+[github-actions-image]: https://github.com/react-component/footer/actions/workflows/main.yml/badge.svg
+[github-actions-url]: https://github.com/react-component/footer/actions/workflows/main.yml
 [codecov-image]: https://img.shields.io/codecov/c/github/react-component/footer/master.svg?style=flat-square
 [codecov-url]: https://codecov.io/gh/react-component/footer/branch/master
 [david-url]: https://david-dm.org/react-component/footer
