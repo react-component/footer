@@ -58,8 +58,8 @@ importers:
         specifier: ^3.2.3
         version: 3.2.3
       husky:
-        specifier: ^8.0.3
-        version: 8.0.3
+        specifier: ^9.1.4
+        version: 9.1.4
       jest:
         specifier: ^29.7.0
         version: 29.7.0(@types/node@22.2.0)(ts-node@10.9.2(@swc/core@1.4.2(@swc/helpers@0.5.1))(@types/node@22.2.0)(typescript@5.5.4))
@@ -4659,9 +4659,9 @@ packages:
   humps@2.0.1:
     resolution: {integrity: sha512-E0eIbrFWUhwfXJmsbdjRQFQPrl5pTEoKlz163j1mTqqUnU9PgR4AgB8AIITzuB3vLBdxZXyZ9TDIrwB2OASz4g==}
 
-  husky@8.0.3:
-    resolution: {integrity: sha512-+dQSyqPh4x1hlO1swXBiNb2HzTDN1I2IGLQx1GrBuiqFJfoMrnZWwVmatvSiO+Iz8fBUnf+lekwNo4c2LlXItg==}
-    engines: {node: '>=14'}
+  husky@9.1.4:
+    resolution: {integrity: sha512-bho94YyReb4JV7LYWRWxZ/xr6TtOTt8cMfmQ39MQYJ7f/YE268s3GdghGwi+y4zAeqewE5zYLvuhV0M0ijsDEA==}
+    engines: {node: '>=18'}
     hasBin: true
 
   iconv-lite@0.4.24:
@@ -14657,7 +14657,7 @@ snapshots:
 
   humps@2.0.1: {}
 
-  husky@8.0.3: {}
+  husky@9.1.4: {}
 
   iconv-lite@0.4.24:
     dependencies:
