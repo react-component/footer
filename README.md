@@ -11,8 +11,8 @@
 [npm-url]: http://npmjs.org/package/rc-footer
 [github-actions-image]: https://github.com/react-component/footer/actions/workflows/main.yml/badge.svg
 [github-actions-url]: https://github.com/react-component/footer/actions/workflows/main.yml
-[codecov-image]: https://img.shields.io/codecov/c/github/react-component/footer/master.svg?style=flat-square
-[codecov-url]: https://codecov.io/gh/react-component/footer/branch/master
+[codecov-image]: https://img.shields.io/codecov/c/github/react-component/footer/main.svg?style=flat-square
+[codecov-url]: https://codecov.io/gh/react-component/footer/
 [david-url]: https://david-dm.org/react-component/footer
 [david-image]: https://david-dm.org/react-component/footer/status.svg?style=flat-square
 [david-dev-url]: https://david-dm.org/react-component/footer?type=dev
