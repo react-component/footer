@@ -10,7 +10,7 @@ jobs:
       - uses: oven-sh/setup-bun@v2
       - run: bun i
       - run: bun run lint
-      - run: bunx tsx --noEmit
+      - run: bunx tsc --noEmit
       - run: bun run compile
       - run: npm test -- --coverage
       - uses: codecov/codecov-action@v4
