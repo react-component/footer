@@ -17,7 +17,7 @@ importers:
     devDependencies:
       '@rc-component/father-plugin':
         specifier: ^1.0.3
-        version: 1.0.3(father@4.5.0(@babel/core@7.25.2)(@types/node@22.2.0)(styled-components@6.1.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(type-fest@1.4.0)(webpack@5.93.0(@swc/core@1.4.2(@swc/helpers@0.5.1))))
+        version: 1.1.0(father@4.5.0(@babel/core@7.25.2)(@types/node@22.2.0)(styled-components@6.1.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(type-fest@1.4.0)(webpack@5.93.0(@swc/core@1.4.2(@swc/helpers@0.5.1))))
       '@testing-library/jest-dom':
         specifier: ^5.17.0
         version: 5.17.0
@@ -1568,8 +1568,8 @@ packages:
     resolution: {integrity: sha512-POgTXhjrTfbTV63DiFXav4lBHiICLKKwDeaKn9Nphwj7WH6m0hMMCaJkMyRWjgtPFyRKRVoMXXjczsTQRDEhYw==}
     engines: {node: ^12.20.0 || ^14.18.0 || >=16.0.0}
 
-  '@rc-component/father-plugin@1.0.3':
-    resolution: {integrity: sha512-5nEgUqcBLTZELXF2qxCMxKII80P57edq9KVQKmthAMFF0Z/m3hKtLrzXRoxRhhCcACNYOR545t/fTUVAPLO6SA==}
+  '@rc-component/father-plugin@1.1.0':
+    resolution: {integrity: sha512-/axZyVOevR9f7+2mN7tQn1WWa0DmW9CyUtb8gcRLe5S9GIsf0pAXdZ7kyPg32nDdDfwIvVBULg5V8iIkQTAA/g==}
     peerDependencies:
       father: ^4.0.0
 
@@ -10450,7 +10450,7 @@ snapshots:
       picocolors: 1.0.1
       tslib: 2.6.3
 
-  '@rc-component/father-plugin@1.0.3(father@4.5.0(@babel/core@7.25.2)(@types/node@22.2.0)(styled-components@6.1.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(type-fest@1.4.0)(webpack@5.93.0(@swc/core@1.4.2(@swc/helpers@0.5.1))))':
+  '@rc-component/father-plugin@1.1.0(father@4.5.0(@babel/core@7.25.2)(@types/node@22.2.0)(styled-components@6.1.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(type-fest@1.4.0)(webpack@5.93.0(@swc/core@1.4.2(@swc/helpers@0.5.1))))':
     dependencies:
       father: 4.5.0(@babel/core@7.25.2)(@types/node@22.2.0)(styled-components@6.1.12(react-dom@18.3.1(react@18.3.1))(react@18.3.1))(type-fest@1.4.0)(webpack@5.93.0(@swc/core@1.4.2(@swc/helpers@0.5.1)))
 
