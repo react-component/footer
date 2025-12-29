@@ -45,17 +45,16 @@
   },
   "dependencies": {
     "@babel/runtime": "^7.25.0",
-    "classnames": "^2.5.1"
+    "clsx": "^2.1.1"
   },
   "devDependencies": {
     "@rc-component/father-plugin": "^1.0.3",
     "@testing-library/jest-dom": "^6.6.3",
-    "@testing-library/react": "^14.3.1",
-    "@types/classnames": "^2.3.1",
-    "@types/jest": "^29.5.12",
-    "@types/node": "^22.2.0",
-    "@types/react": "^17.0.80",
-    "@types/react-dom": "^18.3.1",
+    "@testing-library/react": "^16.3.1",
+    "@types/jest": "^30.0.0",
+    "@types/node": "^25.0.3",
+    "@types/react": "^19.2.7",
+    "@types/react-dom": "^19.2.3",
     "@umijs/fabric": "^4.0.0",
     "@umijs/test": "^4.3.12",
     "dumi": "^2.4.7",
@@ -69,8 +68,8 @@
     "np": "^10.2.0",
     "prettier": "^3.3.3",
     "pretty-quick": "^4.0.0",
-    "react": "^18.3.1",
-    "react-dom": "^18.3.1",
+    "react": "^19.2.3",
+    "react-dom": "^19.2.3",
     "ts-node": "^10.9.2",
     "typescript": "^5.5.4"
   },

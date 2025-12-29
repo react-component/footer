@@ -19,5 +19,5 @@
       "rc-footer": ["src/index.tsx"]
     }
   },
-  "include": [".dumi/**/*", ".dumirc.ts", "src", "tests", "docs/examples"]
+  "include": [".dumirc.ts", "src", "tests", "docs/examples"]
 }

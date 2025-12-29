@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from 'classnames';
+import { clsx } from 'clsx';
 
 export interface FooterColumnItem {
   title: React.ReactNode;
@@ -24,7 +24,7 @@ export interface FooterColumn {
 const Column: React.FC<FooterColumn> = (props) => {
   const { prefixCls, icon, title, items = [], style, className } = props;
   return (
-    <div className={classNames(`${prefixCls}-column`, className)} style={style}>
+    <div className={clsx(`${prefixCls}-column`, className)} style={style}>
       {(title || icon) && (
         <h2>
           {icon && <span className={`${prefixCls}-column-icon`}>{icon}</span>}
@@ -35,7 +35,7 @@ const Column: React.FC<FooterColumn> = (props) => {
         const LinkComponent = item.LinkComponent || 'a';
         return (
           <div
-            className={classNames(`${prefixCls}-item`, item.className)}
+            className={clsx(`${prefixCls}-item`, item.className)}
             style={item.style}
             key={i}
           >

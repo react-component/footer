@@ -1,5 +1,5 @@
 import React from 'react';
-import classNames from 'classnames';
+import { clsx } from 'clsx';
 import Column from './column';
 import type { FooterColumn } from './column';
 
@@ -29,8 +29,8 @@ const Footer: React.FC<FooterProps> = (props) => {
     ...restProps
   } = props;
 
-  const footerClassName = classNames(`${prefixCls}`, className, {
-    [`${prefixCls}-${theme}`]: !!theme,
+  const footerClassName = clsx(prefixCls, className, {
+    [`${prefixCls}-${theme}`]: theme,
   });
 
   const shouldWrap =
@@ -61,7 +61,7 @@ const Footer: React.FC<FooterProps> = (props) => {
                 className: columnClassName,
                 items = [],
               } = item;
-              const styleObject = { ...columnStyle } as React.CSSProperties;
+              const styleObject: React.CSSProperties = { ...columnStyle };
               if (shouldWrap) {
                 styleObject.flex = `0 0 ${
                   100 / (maxColumnsPerRow! + 1) + 0.1
