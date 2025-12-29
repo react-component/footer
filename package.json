@@ -58,7 +58,7 @@
     "@umijs/fabric": "^4.0.1",
     "@umijs/test": "^4.6.15",
     "dumi": "^2.4.21",
-    "eslint": "^8.57.1",
+    "eslint": "^9.39.2",
     "father": "^4.6.13",
     "gh-pages": "^3.2.3",
     "husky": "^8.0.3",
