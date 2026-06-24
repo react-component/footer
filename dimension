@@ -1,0 +1,33 @@
+s => {
+#  "dimensionHeaders": [
+#    {
+#      "name": "sessionDefaultChannelGroup"
+#    }
+#  ],
+#  "metricHeaders": [
+#    {
+#      "name": "sessions",
+#      "type": "TYPE_INTEGER"
+#    }
+#  ],
+#  "rows": [
+#    {
+#      "dimensionValues": [
+#        {
+#          "value": "Organic Search"
+#        }
+#      ],
+#      "metricValues": [
+#        {
+#          "value": "200"
+#        }
+#      ]
+#    }
+#  ],
+#  "rowCount": 1,
+#  "metadata": {
+#    "currencyCode": "JPY",
+#    "timeZone": "Asia/Tokyo"
+#  },
+#  "kind": "analyticsData#runReport"
+#}
