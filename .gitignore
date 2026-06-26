@@ -28,10 +28,11 @@ yarn.lock
 package-lock.json
 pnpm-lock.yaml
 coverage/
-.doc
+docs-dist
 
 # dumi
 .dumi/tmp
 .dumi/tmp-test
 .dumi/tmp-production
 .env.local
+.vercel

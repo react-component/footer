@@ -1,111 +1,148 @@
-# rc-footer 🐾
+# @rc-component/footer
 
-[![NPM version][npm-image]][npm-url]
-[![npm download][download-image]][download-url]
-[![build status][github-actions-image]][github-actions-url]
-[![Codecov][codecov-image]][codecov-url]
-[![bundle size][bundlephobia-image]][bundlephobia-url]
-[![dumi][dumi-image]][dumi-url]
+<div align="center">
+  <img alt="Ant Design" height="32" src="https://gw.alipayobjects.com/zos/bmw-prod/ae669a89-0c24-40ff-a91d-2b83497170f6.svg" />
+  <p>Footer primitives for React, maintained in the Ant Design ecosystem.</p>
+</div>
 
-[npm-image]: http://img.shields.io/npm/v/rc-footer.svg?style=flat-square
-[npm-url]: http://npmjs.org/package/rc-footer
-[github-actions-image]: https://github.com/react-component/footer/actions/workflows/main.yml/badge.svg
-[github-actions-url]: https://github.com/react-component/footer/actions/workflows/main.yml
-[codecov-image]: https://img.shields.io/codecov/c/github/react-component/footer/main.svg?style=flat-square
-[codecov-url]: https://codecov.io/gh/react-component/footer/
-[david-url]: https://david-dm.org/react-component/footer
-[david-image]: https://david-dm.org/react-component/footer/status.svg?style=flat-square
-[david-dev-url]: https://david-dm.org/react-component/footer?type=dev
-[david-dev-image]: https://david-dm.org/react-component/footer/dev-status.svg?style=flat-square
-[download-image]: https://img.shields.io/npm/dm/rc-footer.svg?style=flat-square
-[download-url]: https://npmjs.org/package/rc-footer
-[bundlephobia-url]: https://bundlephobia.com/result?p=rc-footer
-[bundlephobia-image]: https://badgen.net/bundlephobia/minzip/rc-footer
-[dumi-url]: https://github.com/umijs/dumi
-[dumi-image]: https://img.shields.io/badge/docs%20by-dumi-blue?style=flat-square
+[![NPM version][npm-image]][npm-url] [![npm download][download-image]][download-url] [![build status][github-actions-image]][github-actions-url] [![Codecov][codecov-image]][codecov-url] [![bundle size][bundlephobia-image]][bundlephobia-url] [![dumi][dumi-image]][dumi-url]
 
-Pretty Footer react component used in [ant.design](https://ant.design) and [antv.vision](https://antv.vision).
+## Highlights
 
-![](https://gw.alipayobjects.com/zos/antfincdn/z4ie3X8x6u/1cb23945-ec67-45a3-b521-f8da62e12255.png)
-
-## Live Demo
-
-https://react-component.github.io/footer/
+- Responsive footer layout with columns, links, custom icons, and a bottom area.
+- Light and dark themes with custom background and column layout controls.
+- Used by Ant Design sites and ecosystem pages.
 
 ## Install
 
-[![rc-footer](https://nodei.co/npm/rc-footer.png)](https://npmjs.org/package/rc-footer)
+```bash
+npm install @rc-component/footer
+```
+
+`rc-footer` is the legacy package name. New releases should use the scoped `@rc-component/footer` package.
 
 ## Usage
 
-```js
-import Footer from 'rc-footer';
-import 'rc-footer/assets/index.css'; // import 'rc-footer/asssets/index.less';
-import { render } from 'react-dom';
+```tsx
+import Footer from '@rc-component/footer';
+import '@rc-component/footer/assets/index.css';
 
-render(
+export default () => (
   <Footer
     columns={[
       {
-        icon: (
-          <img src="https://gw.alipayobjects.com/zos/rmsportal/XuVpGqBFxXplzvLjJBZB.svg" />
-        ),
-        title: '语雀',
-        url: 'https://yuque.com',
-        description: '知识创作与分享工具',
-        openExternal: true,
+        title: 'Resources',
+        items: [
+          {
+            title: 'Ant Design',
+            url: 'https://ant.design',
+            openExternal: true,
+          },
+          {
+            title: 'Ant Design Pro',
+            url: 'https://pro.ant.design',
+            openExternal: true,
+          },
+        ],
+      },
+      {
+        title: 'Community',
+        items: [
+          {
+            title: 'GitHub',
+            url: 'https://github.com/ant-design/ant-design',
+            openExternal: true,
+          },
+        ],
       },
     ]}
-    bottom="Made with ❤️ by AFX"
-  />,
-  mountNode,
+    bottom="Made with care by Ant Design"
+  />
 );
 ```
 
+## Examples
+
+- Local docs: run `npm start` and open the printed dumi URL.
+- Pull request previews are published by Vercel and Surge.
+
 ## API
 
-| Property         | Type                              | Default        | Description                              |
-| ---------------- | --------------------------------- | -------------- | ---------------------------------------- |
-| prefixCls        | string                            | rc-footer      |                                          |
-| className        | string                            | ''             | additional class name of footer          |
-| style            | React.CSSProperties               |                | style properties of footer               |
-| columns          | [Column](#Column) Array           | []             | columns data inside footer               |
-| bottom           | ReactNode                         |                | extra bottom area beneath footer columns |
-| theme            | 'light' \| 'dark'                 | 'dark'         | preset theme of footer                   |
-| backgroundColor  | string                            | '#000'         | background color of footer               |
-| columnLayout     | 'space-around' \| 'space-between' | 'space-around' | justify-content value of columns element |
-| maxColumnsPerRow | number                            | -              | max count of columns for each row        |
+### Footer
+
+| Property | Type | Default | Description |
+| --- | --- | --- | --- |
+| backgroundColor | string | `#000` | Background color of footer |
+| bottom | ReactNode | - | Extra bottom area beneath footer columns |
+| className | string | `''` | Additional class name of footer |
+| columnLayout | `space-around` \| `space-between` | `space-around` | `justify-content` value of columns element |
+| columns | [Column](#column)[] | `[]` | Columns data inside footer |
+| maxColumnsPerRow | number | - | Max count of columns for each row |
+| prefixCls | string | `rc-footer` | CSS class prefix |
+| style | React.CSSProperties | - | Style properties of footer |
+| theme | `light` \| `dark` | `dark` | Preset theme of footer |
 
 ### Column
 
-| Property  | Type                       | Default | Description                     |
-| --------- | -------------------------- | ------- | ------------------------------- |
-| icon      | ReactNode                  |         | icon that before column title   |
-| title     | ReactNode                  |         | title of column                 |
-| items     | [Item](#Column-Item) Array | []      | items data inside each column   |
-| className | string                     | ''      | additional class name of footer |
-| style     | React.CSSProperties        |         | style properties of footer      |
+| Property | Type | Default | Description |
+| --- | --- | --- | --- |
+| className | string | `''` | Additional class name of footer |
+| icon | ReactNode | - | Icon before the column title |
+| items | [ColumnItem](#columnitem)[] | `[]` | Items data inside each column |
+| style | React.CSSProperties | - | Style properties of footer |
+| title | ReactNode | - | Title of column |
 
-### Column Item
+### ColumnItem
 
-| Property      | Type                | Default | Description                                             |
-| ------------- | ------------------- | ------- | ------------------------------------------------------- |
-| icon          | ReactNode           |         | icon that before column title                           |
-| title         | ReactNode           |         | title of column                                         |
-| description   | ReactNode           |         | description of column, come after title                 |
-| url           | string              |         | link url of item title                                  |
-| openExternal  | boolean             | false   | link target would be `_blank` if `openExternal` is ture |
-| className     | string              | ''      | additional class name of footer                         |
-| style         | React.CSSProperties |         | style properties of footer                              |
-| LinkComponent | React.ReactType     | 'a'     | the link element to render item                         |
+| Property | Type | Default | Description |
+| --- | --- | --- | --- |
+| LinkComponent | React.ElementType | `a` | Link element used to render the item |
+| className | string | `''` | Additional class name of item |
+| description | ReactNode | - | Description displayed after title |
+| icon | ReactNode | - | Icon before item title |
+| openExternal | boolean | false | Open link in a new tab |
+| style | React.CSSProperties | - | Style properties of item |
+| title | ReactNode | - | Title of item |
+| url | string | - | Link URL of item title |
 
 ## Development
 
-```
+```bash
 npm install
 npm start
 ```
 
+Useful checks:
+
+```bash
+npm run lint
+npm run tsc
+npm test
+npm run build
+npm run compile
+```
+
+## Release
+
+```bash
+npm run prepublishOnly
+```
+
+The release script builds the package and hands publishing to `rc-np`.
+
 ## License
 
-rc-footer is released under the MIT license.
+@rc-component/footer is released under the MIT license.
+
+[npm-image]: https://img.shields.io/npm/v/@rc-component/footer.svg?style=flat-square
+[npm-url]: https://www.npmjs.com/package/@rc-component/footer
+[github-actions-image]: https://github.com/react-component/footer/actions/workflows/main.yml/badge.svg
+[github-actions-url]: https://github.com/react-component/footer/actions/workflows/main.yml
+[codecov-image]: https://img.shields.io/codecov/c/github/react-component/footer/main.svg?style=flat-square
+[codecov-url]: https://codecov.io/gh/react-component/footer/
+[download-image]: https://img.shields.io/npm/dm/@rc-component/footer.svg?style=flat-square
+[download-url]: https://www.npmjs.com/package/@rc-component/footer
+[bundlephobia-url]: https://bundlephobia.com/package/@rc-component/footer
+[bundlephobia-image]: https://badgen.net/bundlephobia/minzip/@rc-component/footer
+[dumi-url]: https://github.com/umijs/dumi
+[dumi-image]: https://img.shields.io/badge/docs%20by-dumi-blue?style=flat-square

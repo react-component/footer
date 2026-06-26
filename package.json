@@ -1,7 +1,7 @@
 {
-  "name": "rc-footer",
+  "name": "@rc-component/footer",
   "version": "0.6.8",
-  "description": "Pretty Footer react component used in ant.design",
+  "description": "🐾 Footer component for React and Ant Design",
   "keywords": [
     "react",
     "react-component",
@@ -12,6 +12,7 @@
   ],
   "main": "./lib/index",
   "module": "./es/index",
+  "types": "./lib/index.d.ts",
   "files": [
     "assets/*.css",
     "assets/*.less",
@@ -19,24 +20,25 @@
     "lib",
     "dist"
   ],
-  "homepage": "https://react-component.github.io/footer",
+  "homepage": "https://github.com/react-component/footer",
   "repository": {
     "type": "git",
-    "url": "git@github.com:react-component/footer.git"
+    "url": "https://github.com/react-component/footer.git"
   },
   "bugs": {
-    "url": "http://github.com/react-component/footer/issues"
+    "url": "https://github.com/react-component/footer/issues"
   },
   "license": "MIT",
   "scripts": {
     "start": "dumi dev",
-    "type:check": "tsc --noEmit",
+    "build": "npm run docs:build",
     "docs:build": "dumi build",
-    "docs:deploy": "gh-pages -d .doc",
+    "docs:deploy": "gh-pages -d docs-dist",
     "compile": "father build && lessc assets/index.less assets/index.css",
-    "gh-pages": "GH_PAGES=1 npm run docs:build && npm run docs:deploy",
-    "prepublishOnly": "npm run compile && np --yolo --no-publish && npm run gh-pages",
+    "deploy": "npm run docs:build && npm run docs:deploy",
+    "prepublishOnly": "npm run compile && rc-np",
     "lint": "eslint src/ --ext .ts,.tsx,.jsx,.js,.md",
+    "tsc": "tsc -p tsconfig.json --noEmit",
     "prettier": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
     "pretty-quick": "pretty-quick",
     "test": "jest",
@@ -48,7 +50,7 @@
     "clsx": "^2.1.1"
   },
   "devDependencies": {
-    "@rc-component/father-plugin": "^1.1.0",
+    "@rc-component/father-plugin": "^2.2.0",
     "@testing-library/jest-dom": "^6.9.1",
     "@testing-library/react": "^16.3.1",
     "@types/jest": "^30.0.0",
@@ -65,7 +67,6 @@
     "jest": "^29.7.0",
     "jest-environment-jsdom": "^29.7.0",
     "less": "^4.5.1",
-    "np": "^10.2.0",
     "prettier": "^3.7.4",
     "pretty-quick": "^4.2.2",
     "react": "^19.2.3",

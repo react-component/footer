@@ -16,8 +16,11 @@
     "paths": {
       "@/*": ["src/*"],
       "@@/*": [".dumi/tmp/*"],
+      "@rc-component/footer": ["src/index.tsx"],
+      "@rc-component/footer/*": ["src/*"],
       "rc-footer": ["src/index.tsx"]
     }
   },
-  "include": [".dumirc.ts", "src", "tests", "docs/examples"]
+  "include": [".dumirc.ts", "src", "tests", "docs/examples", "type.d.ts"],
+  "exclude": ["docs-dist", "lib", "es"]
 }

@@ -1,6 +1,6 @@
 import React from 'react';
-import Footer from 'rc-footer';
-import '../../assets/index.less';
+import Footer from '@rc-component/footer';
+import '@rc-component/footer/assets/index.css';
 
 const App: React.FC = () => {
   return (
