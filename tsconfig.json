@@ -17,6 +17,7 @@
       "@/*": ["src/*"],
       "@@/*": [".dumi/tmp/*"],
       "@rc-component/footer": ["src/index.tsx"],
+      "@rc-component/footer/assets/*": ["assets/*"],
       "@rc-component/footer/*": ["src/*"],
       "rc-footer": ["src/index.tsx"]
     }

@@ -85,10 +85,10 @@ export default () => (
 
 | Property | Type | Default | Description |
 | --- | --- | --- | --- |
-| className | string | `''` | Additional class name of footer |
+| className | string | `''` | Additional class name of column |
 | icon | ReactNode | - | Icon before the column title |
 | items | [ColumnItem](#columnitem)[] | `[]` | Items data inside each column |
-| style | React.CSSProperties | - | Style properties of footer |
+| style | React.CSSProperties | - | Style properties of column |
 | title | ReactNode | - | Title of column |
 
 ### ColumnItem
