@@ -4,7 +4,10 @@
     "module": "ESNext",
     "moduleResolution": "node",
     "baseUrl": "./",
-    "lib": ["dom", "es2017"],
+    "lib": [
+      "dom",
+      "es2017"
+    ],
     "jsx": "react",
     "strict": true,
     "esModuleInterop": true,
@@ -12,17 +15,45 @@
     "emitDecoratorMetadata": true,
     "skipLibCheck": true,
     "declaration": true,
-    "types": ["jest", "node"],
+    "types": [
+      "jest",
+      "node"
+    ],
     "paths": {
-      "@/*": ["src/*"],
-      "@@/*": [".dumi/tmp/*"],
-      "@rc-component/footer": ["src/index.tsx"],
-      "@rc-component/footer/assets": ["assets"],
-      "@rc-component/footer/assets/*": ["assets/*"],
-      "@rc-component/footer/*": ["src/*"],
-      "rc-footer": ["src/index.tsx"]
-    }
+      "@/*": [
+        "src/*"
+      ],
+      "@@/*": [
+        ".dumi/tmp/*"
+      ],
+      "@rc-component/footer": [
+        "src/index.tsx"
+      ],
+      "@rc-component/footer/assets": [
+        "assets"
+      ],
+      "@rc-component/footer/assets/*": [
+        "assets/*"
+      ],
+      "@rc-component/footer/*": [
+        "src/*"
+      ],
+      "rc-footer": [
+        "src/index.tsx"
+      ]
+    },
+    "ignoreDeprecations": "5.0"
   },
-  "include": [".dumirc.ts", "src", "tests", "docs/examples", "type.d.ts"],
-  "exclude": ["docs-dist", "lib", "es"]
+  "include": [
+    ".dumirc.ts",
+    "src",
+    "tests",
+    "docs/examples",
+    "type.d.ts"
+  ],
+  "exclude": [
+    "docs-dist",
+    "lib",
+    "es"
+  ]
 }

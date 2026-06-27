@@ -69,8 +69,14 @@ export default () => (
 
 ## 示例
 
-- 本地文档：运行 `npm start`，并打开终端输出的 dumi 地址。
-- Pull Request 预览由 Vercel 和 Surge 发布。
+运行本地 dumi 站点：
+
+```bash
+npm install
+npm start
+```
+
+然后打开 `http://localhost:8000`。
 
 ## API
 
