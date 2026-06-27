@@ -1,7 +1,6 @@
 <div align="center">
   <h1>@rc-component/footer</h1>
-  <p><sub>Ant Design 生态的一部分。</sub></p>
-  <img alt="Ant Design" height="32" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg" />
+  <p><sub><img alt="Ant Design" height="14" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg" style="vertical-align: -0.125em;" /> Ant Design 生态的一部分。</sub></p>
   <p>🦶 React 页脚布局基础组件，服务于 Ant Design 生态页面。</p>
 </div>
 
@@ -80,37 +79,37 @@ export default () => (
 | 参数 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
 | backgroundColor | string | `#000` | Background color of footer |
-| bottom | ReactNode | - | Extra bottom area beneath footer columns |
-| className | string | `''` | Additional class name of footer |
-| columnLayout | `space-around` \| `space-between` | `space-around` | `justify-content` value of columns element |
-| columns | [Column](#column)[] | `[]` | Columns data inside footer |
-| maxColumnsPerRow | number | - | Max count of columns for each row |
-| prefixCls | string | `rc-footer` | CSS class prefix |
-| style | React.CSSProperties | - | Style properties of footer |
+| bottom | ReactNode | - | 页脚列下方的额外底部区域 |
+| className | string | `''` | 页脚的附加className |
+| columnLayout | `space-around` \| `space-between` | `space-around` | `justify-content` 列元素的值 |
+| columns | [Column](#column)[] | `[]` | 页脚中的列数据 |
+| maxColumnsPerRow | number | - | 每行的最大列数 |
+| prefixCls | string | `rc-footer` | CSS 类前缀 |
+| 风格 | React.CSSProperties | - | 页脚的样式属性 |
 | theme | `light` \| `dark` | `dark` | Preset theme of footer |
 
 ### Column
 
 | 参数 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
-| className | string | `''` | Additional class name of column |
-| icon | ReactNode | - | Icon before the column title |
-| items | [ColumnItem](#columnitem)[] | `[]` | Items data inside each column |
-| style | React.CSSProperties | - | Style properties of column |
-| title | ReactNode | - | Title of column |
+| className | string | `''` | 列的附加className |
+| icon | ReactNode | - | 列标题前的图标 |
+| 项目 | [ColumnItem](#columnitem)[] | `[]` | 每列中的条目数据 |
+| 风格 | React.CSSProperties | - | 列的样式属性 |
+| title | ReactNode | - | 列标题 |
 
 ### ColumnItem
 
 | 参数 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
-| LinkComponent | React.ElementType | `a` | Link element used to render the item |
-| className | string | `''` | Additional class name of item |
-| description | ReactNode | - | Description displayed after title |
-| icon | ReactNode | - | Icon before item title |
-| openExternal | boolean | false | Open link in a new tab |
-| style | React.CSSProperties | - | Style properties of item |
-| title | ReactNode | - | Title of item |
-| url | string | - | Link URL of item title |
+| LinkComponent | React.ElementType | `a` | 用于渲染条目的链接元素 |
+| className | string | `''` | 项目的附加类别名称 |
+| description | ReactNode | - | 标题后的描述 |
+| icon | ReactNode | - | 条目标题前的图标 |
+| openExternal | boolean | false | 在新选项卡中打开链接 |
+| 风格 | React.CSSProperties | - | 项目的样式属性 |
+| title | ReactNode | - | 条目标题 |
+| url | string | - | 项目标题的链接 URL |
 
 ## 本地开发
 
@@ -119,7 +118,7 @@ npm install
 npm start
 ```
 
-Useful checks:
+常用检查：
 
 ```bash
 npm run lint
@@ -135,11 +134,11 @@ npm run compile
 npm run prepublishOnly
 ```
 
-The release flow is handled by `@rc-component/np` through the `rc-np` command after the package build.
+包构建完成后，发布流程由 `@rc-component/np` 通过 `rc-np` 命令处理。
 
 ## 许可证
 
-@rc-component/footer is released under the [MIT](./LICENSE.md) license.
+@rc-component/footer 基于 [MIT](./LICENSE.md) 许可证发布。
 
 [npm-image]: https://img.shields.io/npm/v/@rc-component/footer.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/@rc-component/footer
