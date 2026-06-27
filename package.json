@@ -35,7 +35,7 @@
     "docs:build": "dumi build",
     "docs:deploy": "gh-pages -d docs-dist",
     "compile": "father build && lessc assets/index.less assets/index.css",
-    "deploy": "npm run docs:build && npm run docs:deploy",
+    "deploy": "npm run docs:build:gh-pages && npm run docs:deploy",
     "prepublishOnly": "npm run compile && rc-np",
     "lint": "eslint src/ --ext .ts,.tsx,.jsx,.js,.md",
     "tsc": "tsc -p tsconfig.json --noEmit",
@@ -43,7 +43,8 @@
     "pretty-quick": "pretty-quick",
     "test": "jest",
     "coverage": "jest --coverage",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "docs:build:gh-pages": "GH_PAGES=1 npm run docs:build"
   },
   "dependencies": {
     "@babel/runtime": "^7.28.4",
