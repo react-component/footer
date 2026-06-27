@@ -1,11 +1,11 @@
 <div align="center">
   <h1>@rc-component/footer</h1>
-  <p><sub>Part of the Ant Design ecosystem.</sub></p>
+  <p><sub>Ant Design 生态的一部分。</sub></p>
   <img alt="Ant Design" height="32" src="https://gw.alipayobjects.com/zos/rmsportal/KDpgvguMpGfqaHPjicRK.svg" />
-  <p>Footer primitives for React, maintained in the Ant Design ecosystem.</p>
+  <p>🦶 React 页脚布局基础组件，服务于 Ant Design 生态页面。</p>
 </div>
 
-<p align="center">English | <a href="./README.zh-CN.md">简体中文</a></p>
+<p align="center"><a href="./README.md">English</a> | 简体中文</p>
 
 
 <div align="center">
@@ -14,21 +14,21 @@
 
 </div>
 
-## Highlights
+## 特性
 
-- Responsive footer layout with columns, links, custom icons, and a bottom area.
-- Light and dark themes with custom background and column layout controls.
-- Used by Ant Design sites and ecosystem pages.
+- 支持响应式页脚布局、分栏、链接、自定义图标和底部区域。
+- 支持亮色/暗色主题、自定义背景和分栏布局控制。
+- 被 Ant Design 站点和生态页面使用。
 
-## Install
+## 安装
 
 ```bash
 npm install @rc-component/footer
 ```
 
-`rc-footer` is the legacy package name. New releases should use the scoped `@rc-component/footer` package.
+`rc-footer` 是旧包名。新版本应使用带 scope 的 `@rc-component/footer` 包。
 
-## Usage
+## 使用
 
 ```tsx
 import Footer from '@rc-component/footer';
@@ -68,16 +68,16 @@ export default () => (
 );
 ```
 
-## Examples
+## 示例
 
-- Local docs: run `npm start` and open the printed dumi URL.
-- Pull request previews are published by Vercel and Surge.
+- 本地文档：运行 `npm start`，并打开终端输出的 dumi 地址。
+- Pull Request 预览由 Vercel 和 Surge 发布。
 
 ## API
 
 ### Footer
 
-| Property | Type | Default | Description |
+| 参数 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
 | backgroundColor | string | `#000` | Background color of footer |
 | bottom | ReactNode | - | Extra bottom area beneath footer columns |
@@ -91,7 +91,7 @@ export default () => (
 
 ### Column
 
-| Property | Type | Default | Description |
+| 参数 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
 | className | string | `''` | Additional class name of column |
 | icon | ReactNode | - | Icon before the column title |
@@ -101,7 +101,7 @@ export default () => (
 
 ### ColumnItem
 
-| Property | Type | Default | Description |
+| 参数 | 类型 | 默认值 | 说明 |
 | --- | --- | --- | --- |
 | LinkComponent | React.ElementType | `a` | Link element used to render the item |
 | className | string | `''` | Additional class name of item |
@@ -112,7 +112,7 @@ export default () => (
 | title | ReactNode | - | Title of item |
 | url | string | - | Link URL of item title |
 
-## Development
+## 本地开发
 
 ```bash
 npm install
@@ -129,7 +129,7 @@ npm run build
 npm run compile
 ```
 
-## Release
+## 发布
 
 ```bash
 npm run prepublishOnly
@@ -137,7 +137,7 @@ npm run prepublishOnly
 
 The release flow is handled by `@rc-component/np` through the `rc-np` command after the package build.
 
-## License
+## 许可证
 
 @rc-component/footer is released under the [MIT](./LICENSE.md) license.
 
