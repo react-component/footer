@@ -10,3 +10,12 @@ public
 _site
 .umi
 docs-dist
+coverage
+dist
+.dumi/tmp
+.dumi/tmp-production
+.vercel
+pnpm-lock.yaml
+yarn.lock
+bun.lockb
+*.log
