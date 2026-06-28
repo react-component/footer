@@ -144,7 +144,7 @@ npm run prepublishOnly
 
 ## 许可证
 
-@rc-component/footer 基于 [MIT](./LICENSE.md) 许可证发布。
+@rc-component/footer 基于 [MIT](./LICENSE) 许可证发布。
 
 [npm-image]: https://img.shields.io/npm/v/@rc-component/footer.svg?style=flat-square
 [npm-url]: https://www.npmjs.com/package/@rc-component/footer
