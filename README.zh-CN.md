@@ -83,7 +83,7 @@ npm start
 
 | 参数             | 类型                              | 默认值         | 说明                         |
 | ---------------- | --------------------------------- | -------------- | ---------------------------- |
-| backgroundColor  | string                            | `#000`         | Background color of footer   |
+| backgroundColor  | string                            | `#000`         | 页脚背景色                   |
 | bottom           | ReactNode                         | -              | 页脚列下方的额外底部区域     |
 | className        | string                            | `''`           | 页脚的附加className          |
 | columnLayout     | `space-around` \| `space-between` | `space-around` | `justify-content` 列元素的值 |
@@ -91,7 +91,7 @@ npm start
 | maxColumnsPerRow | number                            | -              | 每行的最大列数               |
 | prefixCls        | string                            | `rc-footer`    | CSS 类前缀                   |
 | style            | React.CSSProperties               | -              | 页脚的样式属性               |
-| theme            | `light` \| `dark`                 | `dark`         | Preset theme of footer       |
+| theme            | `light` \| `dark`                 | `dark`         | 页脚预设主题                 |
 
 ### Column
 
