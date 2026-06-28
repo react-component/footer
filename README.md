@@ -6,7 +6,6 @@
 
 <p align="center">English | <a href="./README.zh-CN.md">简体中文</a></p>
 
-
 <div align="center">
 
 [![NPM version][npm-image]][npm-url] [![npm download][download-image]][download-url] [![build status][github-actions-image]][github-actions-url] [![Codecov][codecov-image]][codecov-url] [![bundle size][bundlephobia-image]][bundlephobia-url] [![dumi][dumi-image]][dumi-url]
@@ -82,40 +81,40 @@ Then open `http://localhost:8000`.
 
 ### Footer
 
-| Property | Type | Default | Description |
-| --- | --- | --- | --- |
-| backgroundColor | string | `#000` | Background color of footer |
-| bottom | ReactNode | - | Extra bottom area beneath footer columns |
-| className | string | `''` | Additional class name of footer |
-| columnLayout | `space-around` \| `space-between` | `space-around` | `justify-content` value of columns element |
-| columns | [Column](#column)[] | `[]` | Columns data inside footer |
-| maxColumnsPerRow | number | - | Max count of columns for each row |
-| prefixCls | string | `rc-footer` | CSS class prefix |
-| style | React.CSSProperties | - | Style properties of footer |
-| theme | `light` \| `dark` | `dark` | Preset theme of footer |
+| Property         | Type                              | Default        | Description                                |
+| ---------------- | --------------------------------- | -------------- | ------------------------------------------ |
+| backgroundColor  | string                            | `#000`         | Background color of footer                 |
+| bottom           | ReactNode                         | -              | Extra bottom area beneath footer columns   |
+| className        | string                            | `''`           | Additional class name of footer            |
+| columnLayout     | `space-around` \| `space-between` | `space-around` | `justify-content` value of columns element |
+| columns          | [Column](#column)[]               | `[]`           | Columns data inside footer                 |
+| maxColumnsPerRow | number                            | -              | Max count of columns for each row          |
+| prefixCls        | string                            | `rc-footer`    | CSS class prefix                           |
+| style            | React.CSSProperties               | -              | Style properties of footer                 |
+| theme            | `light` \| `dark`                 | `dark`         | Preset theme of footer                     |
 
 ### Column
 
-| Property | Type | Default | Description |
-| --- | --- | --- | --- |
-| className | string | `''` | Additional class name of column |
-| icon | ReactNode | - | Icon before the column title |
-| items | [ColumnItem](#columnitem)[] | `[]` | Items data inside each column |
-| style | React.CSSProperties | - | Style properties of column |
-| title | ReactNode | - | Title of column |
+| Property  | Type                        | Default | Description                     |
+| --------- | --------------------------- | ------- | ------------------------------- |
+| className | string                      | `''`    | Additional class name of column |
+| icon      | ReactNode                   | -       | Icon before the column title    |
+| items     | [ColumnItem](#columnitem)[] | `[]`    | Items data inside each column   |
+| style     | React.CSSProperties         | -       | Style properties of column      |
+| title     | ReactNode                   | -       | Title of column                 |
 
 ### ColumnItem
 
-| Property | Type | Default | Description |
-| --- | --- | --- | --- |
-| LinkComponent | React.ElementType | `a` | Link element used to render the item |
-| className | string | `''` | Additional class name of item |
-| description | ReactNode | - | Description displayed after title |
-| icon | ReactNode | - | Icon before item title |
-| openExternal | boolean | false | Open link in a new tab |
-| style | React.CSSProperties | - | Style properties of item |
-| title | ReactNode | - | Title of item |
-| url | string | - | Link URL of item title |
+| Property      | Type                | Default | Description                          |
+| ------------- | ------------------- | ------- | ------------------------------------ |
+| LinkComponent | React.ElementType   | `a`     | Link element used to render the item |
+| className     | string              | `''`    | Additional class name of item        |
+| description   | ReactNode           | -       | Description displayed after title    |
+| icon          | ReactNode           | -       | Icon before item title               |
+| openExternal  | boolean             | false   | Open link in a new tab               |
+| style         | React.CSSProperties | -       | Style properties of item             |
+| title         | ReactNode           | -       | Title of item                        |
+| url           | string              | -       | Link URL of item title               |
 
 ## Development
 
@@ -123,6 +122,8 @@ Then open `http://localhost:8000`.
 npm install
 npm start
 ```
+
+The dumi site runs at `http://localhost:8000` by default.
 
 Useful checks:
 
