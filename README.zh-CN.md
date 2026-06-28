@@ -85,7 +85,7 @@ npm start
 | ---------------- | --------------------------------- | -------------- | ---------------------------- |
 | backgroundColor  | string                            | `#000`         | 页脚背景色                   |
 | bottom           | ReactNode                         | -              | 页脚列下方的额外底部区域     |
-| className        | string                            | `''`           | 页脚的附加className          |
+| className        | string                            | `''`           | 页脚的附加 className         |
 | columnLayout     | `space-around` \| `space-between` | `space-around` | `justify-content` 列元素的值 |
 | columns          | [Column](#column)[]               | `[]`           | 页脚中的列数据               |
 | maxColumnsPerRow | number                            | -              | 每行的最大列数               |
@@ -95,13 +95,13 @@ npm start
 
 ### Column
 
-| 参数      | 类型                        | 默认值 | 说明              |
-| --------- | --------------------------- | ------ | ----------------- |
-| className | string                      | `''`   | 列的附加className |
-| icon      | ReactNode                   | -      | 列标题前的图标    |
-| items     | [ColumnItem](#columnitem)[] | `[]`   | 每列中的条目数据  |
-| style     | React.CSSProperties         | -      | 列的样式属性      |
-| title     | ReactNode                   | -      | 列标题            |
+| 参数      | 类型                        | 默认值 | 说明               |
+| --------- | --------------------------- | ------ | ------------------ |
+| className | string                      | `''`   | 列的附加 className |
+| icon      | ReactNode                   | -      | 列标题前的图标     |
+| items     | [ColumnItem](#columnitem)[] | `[]`   | 每列中的条目数据   |
+| style     | React.CSSProperties         | -      | 列的样式属性       |
+| title     | ReactNode                   | -      | 列标题             |
 
 ### ColumnItem
 
