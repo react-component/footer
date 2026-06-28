@@ -40,10 +40,9 @@
     "lint": "eslint src/ --ext .ts,.tsx,.jsx,.js,.md",
     "tsc": "tsc -p tsconfig.json --noEmit",
     "prettier": "prettier --write \"**/*.{ts,tsx,js,jsx,json,md}\"",
-    "pretty-quick": "pretty-quick",
     "test": "jest",
     "coverage": "jest --coverage",
-    "prepare": "husky install",
+    "prepare": "husky",
     "docs:build:gh-pages": "GH_PAGES=1 npm run docs:build"
   },
   "dependencies": {
@@ -71,12 +70,12 @@
     "jest-environment-jsdom": "^29.7.0",
     "less": "^4.6.7",
     "prettier": "^3.9.0",
-    "pretty-quick": "^4.2.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "sass": "^1.97.1",
     "ts-node": "^10.9.2",
-    "typescript": "^5.9.3"
+    "typescript": "^5.9.3",
+    "lint-staged": "^16.4.0"
   },
   "peerDependencies": {
     "react": ">=18.0.0",
@@ -95,5 +94,8 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "lint-staged": {
+    "*": "prettier --write --ignore-unknown"
   }
 }
