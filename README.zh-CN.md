@@ -6,7 +6,6 @@
 
 <p align="center"><a href="./README.md">English</a> | 简体中文</p>
 
-
 <div align="center">
 
 [![NPM version][npm-image]][npm-url] [![npm download][download-image]][download-url] [![build status][github-actions-image]][github-actions-url] [![Codecov][codecov-image]][codecov-url] [![bundle size][bundlephobia-image]][bundlephobia-url] [![dumi][dumi-image]][dumi-url]
@@ -82,40 +81,40 @@ npm start
 
 ### Footer
 
-| 参数 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| backgroundColor | string | `#000` | Background color of footer |
-| bottom | ReactNode | - | 页脚列下方的额外底部区域 |
-| className | string | `''` | 页脚的附加className |
-| columnLayout | `space-around` \| `space-between` | `space-around` | `justify-content` 列元素的值 |
-| columns | [Column](#column)[] | `[]` | 页脚中的列数据 |
-| maxColumnsPerRow | number | - | 每行的最大列数 |
-| prefixCls | string | `rc-footer` | CSS 类前缀 |
-| 风格 | React.CSSProperties | - | 页脚的样式属性 |
-| theme | `light` \| `dark` | `dark` | Preset theme of footer |
+| 参数             | 类型                              | 默认值         | 说明                         |
+| ---------------- | --------------------------------- | -------------- | ---------------------------- |
+| backgroundColor  | string                            | `#000`         | Background color of footer   |
+| bottom           | ReactNode                         | -              | 页脚列下方的额外底部区域     |
+| className        | string                            | `''`           | 页脚的附加className          |
+| columnLayout     | `space-around` \| `space-between` | `space-around` | `justify-content` 列元素的值 |
+| columns          | [Column](#column)[]               | `[]`           | 页脚中的列数据               |
+| maxColumnsPerRow | number                            | -              | 每行的最大列数               |
+| prefixCls        | string                            | `rc-footer`    | CSS 类前缀                   |
+| style            | React.CSSProperties               | -              | 页脚的样式属性               |
+| theme            | `light` \| `dark`                 | `dark`         | Preset theme of footer       |
 
 ### Column
 
-| 参数 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| className | string | `''` | 列的附加className |
-| icon | ReactNode | - | 列标题前的图标 |
-| 项目 | [ColumnItem](#columnitem)[] | `[]` | 每列中的条目数据 |
-| 风格 | React.CSSProperties | - | 列的样式属性 |
-| title | ReactNode | - | 列标题 |
+| 参数      | 类型                        | 默认值 | 说明              |
+| --------- | --------------------------- | ------ | ----------------- |
+| className | string                      | `''`   | 列的附加className |
+| icon      | ReactNode                   | -      | 列标题前的图标    |
+| items     | [ColumnItem](#columnitem)[] | `[]`   | 每列中的条目数据  |
+| style     | React.CSSProperties         | -      | 列的样式属性      |
+| title     | ReactNode                   | -      | 列标题            |
 
 ### ColumnItem
 
-| 参数 | 类型 | 默认值 | 说明 |
-| --- | --- | --- | --- |
-| LinkComponent | React.ElementType | `a` | 用于渲染条目的链接元素 |
-| className | string | `''` | 项目的附加类别名称 |
-| description | ReactNode | - | 标题后的描述 |
-| icon | ReactNode | - | 条目标题前的图标 |
-| openExternal | boolean | false | 在新选项卡中打开链接 |
-| 风格 | React.CSSProperties | - | 项目的样式属性 |
-| title | ReactNode | - | 条目标题 |
-| url | string | - | 项目标题的链接 URL |
+| 参数          | 类型                | 默认值 | 说明                   |
+| ------------- | ------------------- | ------ | ---------------------- |
+| LinkComponent | React.ElementType   | `a`    | 用于渲染条目的链接元素 |
+| className     | string              | `''`   | 项目的附加类别名称     |
+| description   | ReactNode           | -      | 标题后的描述           |
+| icon          | ReactNode           | -      | 条目标题前的图标       |
+| openExternal  | boolean             | false  | 在新选项卡中打开链接   |
+| style         | React.CSSProperties | -      | 项目的样式属性         |
+| title         | ReactNode           | -      | 条目标题               |
+| url           | string              | -      | 项目标题的链接 URL     |
 
 ## 本地开发
 
