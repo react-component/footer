@@ -20,7 +20,7 @@
     "lib",
     "dist"
   ],
-  "homepage": "https://github.com/react-component/footer",
+  "homepage": "https://react-component.github.io/footer",
   "repository": {
     "type": "git",
     "url": "https://github.com/react-component/footer.git"
@@ -92,5 +92,8 @@
   },
   "tnpm": {
     "mode": "npm"
+  },
+  "publishConfig": {
+    "access": "public"
   }
 }
