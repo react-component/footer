@@ -4,11 +4,11 @@
   <p>🦶 React 页脚布局基础组件，服务于 Ant Design 生态页面。</p>
 
   <p>
-    <a href="https://www.npmjs.com/package/@rc-component/footer"><img alt="NPM version" src="https://img.shields.io/npm/v/@rc-component/footer.svg?style=flat-square"></a>
-    <a href="https://www.npmjs.com/package/@rc-component/footer"><img alt="npm downloads" src="https://img.shields.io/npm/dm/@rc-component/footer.svg?style=flat-square"></a>
+    <a href="https://npmjs.org/package/@rc-component/footer"><img alt="NPM version" src="https://img.shields.io/npm/v/@rc-component/footer.svg?style=flat-square"></a>
+    <a href="https://npmjs.org/package/@rc-component/footer"><img alt="npm downloads" src="https://img.shields.io/npm/dm/@rc-component/footer.svg?style=flat-square"></a>
     <a href="https://github.com/react-component/footer/actions/workflows/main.yml"><img alt="build status" src="https://github.com/react-component/footer/actions/workflows/main.yml/badge.svg"></a>
-    <a href="https://codecov.io/gh/react-component/footer/"><img alt="Codecov" src="https://img.shields.io/codecov/c/github/react-component/footer/main.svg?style=flat-square"></a>
-    <a href="https://bundlephobia.com/package/@rc-component/footer"><img alt="bundle size" src="https://badgen.net/bundlephobia/minzip/@rc-component/footer"></a>
+    <a href="https://app.codecov.io/gh/react-component/footer"><img alt="Codecov" src="https://img.shields.io/codecov/c/github/react-component/footer/master.svg?style=flat-square"></a>
+    <a href="https://bundlephobia.com/package/@rc-component/footer"><img alt="bundle size" src="https://img.shields.io/bundlephobia/minzip/@rc-component/footer?style=flat-square"></a>
     <a href="https://github.com/umijs/dumi"><img alt="dumi" src="https://img.shields.io/badge/docs%20by-dumi-blue?style=flat-square"></a>
   </p>
 </div>
