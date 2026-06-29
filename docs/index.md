@@ -1,6 +1,6 @@
 ---
 hero:
-  title: rc-footer
+  title: '@rc-component/footer'
   description: React Footer Component
 ---
 

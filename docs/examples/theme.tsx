@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
-import Footer from 'rc-footer';
-import type { FooterProps } from 'rc-footer';
-import '../../assets/index.less';
+import Footer from '@rc-component/footer';
+import type { FooterProps } from '@rc-component/footer';
+import '@rc-component/footer/assets/index.css';
 
 const App: React.FC = () => {
   const [theme, setTheme] = useState<FooterProps['theme']>('light');
