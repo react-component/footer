@@ -2,8 +2,7 @@
   "compilerOptions": {
     "target": "esnext",
     "module": "ESNext",
-    "moduleResolution": "node",
-    "baseUrl": "./",
+    "moduleResolution": "bundler",
     "lib": ["dom", "es2017"],
     "jsx": "react",
     "strict": false,
@@ -13,15 +12,14 @@
     "skipLibCheck": true,
     "declaration": true,
     "paths": {
-      "@/*": ["src/*"],
-      "@@/*": [".dumi/tmp/*"],
-      "@rc-component/footer": ["src/index.tsx"],
-      "@rc-component/footer/assets": ["assets"],
-      "@rc-component/footer/assets/*": ["assets/*"],
-      "@rc-component/footer/*": ["src/*"],
-      "rc-footer": ["src/index.tsx"]
+      "@/*": ["./src/*"],
+      "@@/*": ["./.dumi/tmp/*"],
+      "@rc-component/footer": ["./src/index.tsx"],
+      "@rc-component/footer/assets": ["./assets"],
+      "@rc-component/footer/assets/*": ["./assets/*"],
+      "@rc-component/footer/*": ["./src/*"],
+      "rc-footer": ["./src/index.tsx"]
     },
-    "ignoreDeprecations": "6.0",
     "noImplicitAny": false,
     "strictNullChecks": false,
     "strictPropertyInitialization": false,
