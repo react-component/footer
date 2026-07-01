@@ -5,7 +5,7 @@
     "moduleResolution": "bundler",
     "lib": ["dom", "es2017"],
     "jsx": "react",
-    "strict": false,
+    "strict": true,
     "esModuleInterop": true,
     "experimentalDecorators": true,
     "emitDecoratorMetadata": true,
@@ -19,13 +19,7 @@
       "@rc-component/footer/assets/*": ["./assets/*"],
       "@rc-component/footer/*": ["./src/*"],
       "rc-footer": ["./src/index.tsx"]
-    },
-    "noImplicitAny": false,
-    "strictNullChecks": false,
-    "strictPropertyInitialization": false,
-    "strictFunctionTypes": false,
-    "noImplicitThis": false,
-    "strictBindCallApply": false
+    }
   },
   "include": [
     "global.d.ts",
